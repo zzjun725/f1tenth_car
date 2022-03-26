@@ -50,7 +50,7 @@ class PurePursuit(Node):
         self.nearst_idx = 0
         self.wp = None
         self.L = 1.2
-        self.P = 0.5
+        self.P = 0.3
         self.odom_subscriber = self.create_subscription(
             Odometry, 'pf/pose/odom', self.pose_callback, 10)
         drive_topic = '/drive'
