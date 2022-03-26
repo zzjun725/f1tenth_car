@@ -50,7 +50,7 @@ class PurePursuit(Node):
         self.nearst_idx = 0
         self.wp = None
         self.L = 1.2
-        self.P = 0.3
+        self.P = 0.6
         self.odom_subscriber = self.create_subscription(
             Odometry, 'pf/pose/odom', self.pose_callback, 10)
         drive_topic = '/drive'
@@ -165,7 +165,7 @@ class PurePursuit(Node):
         # TODO: publish drive message, don't forget to limit the steering angle.
         velocity = wp[segment_end][2]
         if abs(steering_angle) >=1:
-            steering_angle /= 4
+            steering_angle /= 1.5
         
         # print(f'cur_position {cur_position}')
         # print(f'local_goal {local_goalP}')
