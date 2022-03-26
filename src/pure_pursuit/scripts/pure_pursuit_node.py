@@ -49,7 +49,7 @@ class PurePursuit(Node):
         self.findFirstP = False
         self.nearst_idx = 0
         self.wp = None
-        self.L = 0.5
+        self.L = 1.2
         self.P = 0.3
         self.odom_subscriber = self.create_subscription(
             Odometry, 'pf/pose/odom', self.pose_callback, 10)
@@ -61,33 +61,33 @@ class PurePursuit(Node):
 
     def pose_callback(self, pose_msg):
         ######
-        scale_vector = Vector3()
-        scale_vector.x = 0.1
-        scale_vector.y = 0.1
-        scale_vector.z = 0.1
-        marker = Marker(
-                    type=Marker.POINTS,
-                    id=0,
+        # scale_vector = Vector3()
+        # scale_vector.x = 0.1
+        # scale_vector.y = 0.1
+        # scale_vector.z = 0.1
+        # marker = Marker(
+        #             type=Marker.POINTS,
+        #             id=0,
                     # action = Marker.ADD, 
-                    pose=Pose(),
-                    scale=scale_vector,
-                    header=Header(frame_id='map'),
+        #             pose=Pose(),
+         #            scale=scale_vector,
+         #            header=Header(frame_id='map'),
                     # color=ColorRGBA(0.0, 1.0, 0.0, 1.0),                    
-                    )
-        for i, point in enumerate(wp):
-            x, y = point[0], point[1]
-            x, y = float(x), float(y)
+        #             )
+        # for i, point in enumerate(wp):
+        #     x, y = point[0], point[1]
+        #     x, y = float(x), float(y)
             # print(x, y)
-            point = Point()
-            point.x = x
-            point.y = y
-            point.z = 0.0
-            marker.points.append(point)
-        marker.color.r = 1.0
-        marker.color.g = 0.0
-        marker.color.b = 0.0
-        marker.color.a = 1.0  
-        self.waypoints_markerpub.publish(marker)        
+        #     point = Point()
+        #     point.x = x
+        #     point.y = y
+         #    point.z = 0.0
+          #   marker.points.append(point)
+        # marker.color.r = 1.0
+         #marker.color.g = 0.0
+        # marker.color.b = 0.0
+        # marker.color.a = 1.0  
+        # self.waypoints_markerpub.publish(marker)        
         #######
         
         # TODO: find the current waypoint to track using methods mentioned in lecture
@@ -131,27 +131,27 @@ class PurePursuit(Node):
                                  [0, 0, 0, 1]])
         
         #######
-        scale_vector = Vector3()
-        scale_vector.x = 0.5
-        scale_vector.y = 0.5
-        scale_vector.z = 0.5
-        marker = Marker(
-            type=Marker.SPHERE,
-            id=1,
+        # scale_vector = Vector3()
+        # scale_vector.x = 0.5
+        # scale_vector.y = 0.5
+        # scale_vector.z = 0.5
+        # marker = Marker(
+        #     type=Marker.SPHERE,
+        #     id=1,
             # action = Marker.ADD, 
-            pose=Pose(),
-            scale=scale_vector,
-            header=Header(frame_id='map'),
+          #   pose=Pose(),
+         #    scale=scale_vector,
+          #   header=Header(frame_id='map'),
             # color=ColorRGBA(0.0, 1.0, 0.0, 1.0),                    
-            )
-        marker.pose.position.x = interp_point[0]
-        marker.pose.position.y = interp_point[1]
-        marker.pose.position.z = 0.0
-        marker.color.r = 0.0
-        marker.color.g = 1.0
-        marker.color.b = 0.0
-        marker.color.a = 1.0  
-        self.waypoints_markerpub.publish(marker)
+          #   )
+        # marker.pose.position.x = interp_point[0]
+        # marker.pose.position.y = interp_point[1]
+        # marker.pose.position.z = 0.0
+        # marker.color.r = 0.0
+        # marker.color.g = 1.0
+        # marker.color.b = 0.0
+        # marker.color.a = 1.0  
+        # self.waypoints_markerpub.publish(marker)
         #######          
         
         local_goalP = np.linalg.inv(local2global) @ np.array([interp_point[0], interp_point[1], 0, 1])

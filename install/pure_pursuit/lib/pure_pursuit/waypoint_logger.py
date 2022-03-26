@@ -6,8 +6,9 @@ import numpy as np
 from sensor_msgs.msg import LaserScan
 from ackermann_msgs.msg import AckermannDriveStamped, AckermannDrive
 # TODO CHECK: include needed ROS msg type headers and libraries
-# from tf.transformations import euler_from_quaternion
+from tf.transformations import euler_from_quaternion
 from nav_msgs.msg import Odometry
+
 
 home = '/f1tenth_ws'
 
@@ -36,7 +37,7 @@ class WaypointsLogger(Node):
                                 data.pose.pose.orientation.z, 
                                 data.pose.pose.orientation.w])
 
-            # euler = tf.transformations.euler_from_quaternion(quaternion)
+            euler = tf.transformations.euler_from_quaternion(quaternion)
             speed = np.linalg.norm(np.array([data.twist.twist.linear.x, 
                                     data.twist.twist.linear.y, 
                                     data.twist.twist.linear.z]),2)
@@ -44,7 +45,7 @@ class WaypointsLogger(Node):
 
             self.log.write('%f, %f, %f, %f\n' % (data.pose.pose.position.x,
                                             data.pose.pose.position.y,
-                                            0.0,
+                                            euler[2],
                                             speed))
 
 def main(args=None):

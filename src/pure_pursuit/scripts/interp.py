@@ -149,9 +149,9 @@ waypoints = np.hstack([left, right])  # (2, n)
 
 # change_for car
 home = '/sim_ws'
-origin = np.array([-14.544, 9.481]).reshape(2, 1)  # (2, 1)
+origin = np.array([-4.67, 0.673]).reshape(2, 1)  # (2, 1)
 
-theta = -np.pi/2
+theta = -np.pi/2 + 2*np.pi/180
 R = np.array(
     [[np.cos(theta), -np.sin(theta)],
     [np.sin(theta), np.cos(theta)]]
@@ -165,35 +165,36 @@ def floorUp(x):
         return np.floor(x).astype(np.int32)
 
 # interp speed
-speed_max = 7.0
-speed_min = 1.0
-shortBufferOffset = 6
+sOffset = 0.9
+speed_max = 4.5
+speed_min = 1.5
+shortBufferOffset = 5
 longBufferOffset = 3
 short_buffer = floorUp(2*arcPointsNum/3 + shortBufferOffset)
 long_buffer = floorUp(arcPointsNum/3 + longBufferOffset)
 print(f'short_buffer: {short_buffer}, long_buffer{long_buffer}')
 
 v = np.array([-1])
-v = np.hstack((v, np.array([speed_max]*int(ShortPointsNum/2-shortBufferOffset))))
-v = np.hstack([v, np.linspace(speed_max, speed_min, short_buffer)])
+v = np.hstack((v, np.array([speed_max-sOffset]*int(ShortPointsNum/2-shortBufferOffset))))
+v = np.hstack([v, np.linspace(speed_max-sOffset, speed_min, short_buffer)])
 v = np.hstack([v, np.linspace(speed_min, speed_max, long_buffer)])  
 # print(len(v)-1)   
 
 v = np.hstack([v, np.array([speed_max]*int(LongPointsNum-2*longBufferOffset +1))])
 v = np.hstack([v, np.linspace(speed_max, speed_min, long_buffer)])
-v = np.hstack([v, np.linspace(speed_min, speed_max, short_buffer-1)])
+v = np.hstack([v, np.linspace(speed_min, speed_max-sOffset, short_buffer-1)])
 # print(len(v)-1)  
 
-v = np.hstack([v, np.array([speed_max]*int(ShortPointsNum-2*shortBufferOffset +1))])
-v = np.hstack([v, np.linspace(speed_max, speed_min, short_buffer)])
+v = np.hstack([v, np.array([speed_max-sOffset]*int(ShortPointsNum-2*shortBufferOffset +1))])
+v = np.hstack([v, np.linspace(speed_max-sOffset, speed_min, short_buffer)])
 v = np.hstack([v, np.linspace(speed_min, speed_max, long_buffer)])
 # print(len(v)-1)  
 
 v = np.hstack([v, np.array([speed_max]*int(LongPointsNum-2*longBufferOffset))])
 v = np.hstack([v, np.linspace(speed_max, speed_min, long_buffer)])
-v = np.hstack([v, np.linspace(speed_min, speed_max, short_buffer-1)])
+v = np.hstack([v, np.linspace(speed_min, speed_max-sOffset, short_buffer-1)])
 
-v = np.hstack((v, np.array([speed_max]*int(ShortPointsNum/2-shortBufferOffset))))
+v = np.hstack((v, np.array([speed_max-sOffset]*int(ShortPointsNum/2-shortBufferOffset))))
 # print(len(v)-1)
 v = v[1:]
 

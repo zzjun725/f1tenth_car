@@ -1,0 +1,28 @@
+[1.336s] Invoking command in '/f1tenth_ws/build/lab7_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/lab7_pkg -- -j6 -l6
+[1.808s] [100%] Built target rrt_node
+[1.949s] Invoked command in '/f1tenth_ws/build/lab7_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/lab7_pkg -- -j6 -l6
+[2.178s] Invoking command in '/f1tenth_ws/build/lab7_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/lab7_pkg
+[2.216s] -- Install configuration: ""
+[2.217s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/lib/lab7_pkg/rrt_node
+[2.218s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/environment/pythonpath.sh
+[2.218s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/environment/pythonpath.dsv
+[2.219s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/lib/python3.8/site-packages/lab7_pkg
+[2.219s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/lib/python3.8/site-packages/lab7_pkg/__init__.py
+[2.378s] Listing '/f1tenth_ws/install/lab7_pkg/lib/python3.8/site-packages/lab7_pkg'...
+[2.399s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/lib/lab7_pkg/rrt_node.py
+[2.399s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/ament_index/resource_index/package_run_dependencies/lab7_pkg
+[2.400s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/ament_index/resource_index/parent_prefix_path/lab7_pkg
+[2.400s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/environment/ament_prefix_path.sh
+[2.401s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/environment/ament_prefix_path.dsv
+[2.401s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/environment/path.sh
+[2.402s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/environment/path.dsv
+[2.403s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/local_setup.bash
+[2.403s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/local_setup.sh
+[2.403s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/local_setup.zsh
+[2.404s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/local_setup.dsv
+[2.404s] -- Installing: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/package.dsv
+[2.405s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/ament_index/resource_index/packages/lab7_pkg
+[2.405s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/cmake/lab7_pkgConfig.cmake
+[2.405s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/cmake/lab7_pkgConfig-version.cmake
+[2.406s] -- Up-to-date: /f1tenth_ws/install/lab7_pkg/share/lab7_pkg/package.xml
+[3.281s] Invoked command in '/f1tenth_ws/build/lab7_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/lab7_pkg
