@@ -167,7 +167,7 @@ def floorUp(x):
 
 # interp speed
 sOffset = 1.0
-speed_max = 4.6
+speed_max = 4.4
 speed_min = 1.5
 shortBufferOffset = 4
 longBufferOffset = 5
