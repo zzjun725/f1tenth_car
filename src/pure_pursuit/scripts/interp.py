@@ -1,4 +1,4 @@
-Draw = True
+Draw = False
 import numpy as np
 import os
 
