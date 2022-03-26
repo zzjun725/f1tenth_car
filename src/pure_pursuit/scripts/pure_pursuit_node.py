@@ -72,12 +72,12 @@ class PurePursuit(Node):
                     pose=Pose(),
                     scale=scale_vector,
                     header=Header(frame_id='map'),
-                  #   color=ColorRGBA(0.0, 1.0, 0.0, 1.0),                    
+                  #  color=ColorRGBA(0.0, 1.0, 0.0, 1.0),                    
                     )
         for i, point in enumerate(wp):
             x, y = point[0], point[1]
             x, y = float(x), float(y)
-            print(x, y)
+            # print(x, y)
             point = Point()
             point.x = x
             point.y = y
