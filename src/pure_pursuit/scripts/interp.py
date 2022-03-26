@@ -1,4 +1,4 @@
-Draw = False
+Draw = True
 import numpy as np
 import os
 
@@ -93,8 +93,8 @@ print(h, v)
 arcOffsetLongV = 1.2
 arcOffsetLongH = 0.15
 arcOffsetShortH = 0.5
-arcOffsetShortV = 0.2
-arcOffsetCurve = 0.4
+arcOffsetShortV = 0.1
+arcOffsetCurve = 0.5
 cubic_k = 7
 arcPointsNum = 15
 LongPointsNum = 40
@@ -132,20 +132,21 @@ right_x = -left[0] + 2*bottom_certerP[0]
 right = np.vstack([right_x, right_y])
 waypoints = np.hstack([left, right])  # (2, n)
 
-# fig = plt.figure(figsize=(16, 9))
-# plt.axis('equal')
-# plt.plot([0, 0, l1, l1, 0], [0, l3, l3, 0, 0], '-b', linewidth=1.0)
+if Draw:
+    fig = plt.figure(figsize=(16, 9))
+    plt.axis('equal')
+    plt.plot([0, 0, l1, l1, 0], [0, l3, l3, 0, 0], '-b', linewidth=1.0)
 
-# plt.plot([h, h, v+l2, v+l2, h], [v, l4+h, l4+h, v, v], '-r', linewidth=1.0)
+    plt.plot([h, h, v+l2, v+l2, h], [v, l4+h, l4+h, v, v], '-r', linewidth=1.0)
 
-# # plt.plot([h, h+l2], [v, v],'-r')
+    # plt.plot([h, h+l2], [v, v],'-r')
 
-# # plt.plot(left[0],left[1], 'or', markersize=1.0)
-# # plt.plot(right[0],right[1], 'or', markersize=1.0)
-# plt.plot(waypoints[0], waypoints[1], 'or', markersize=1.0)
-# # plt.plot(x,arcPointsLeftBottom_y, '-or')
-# plt.plot([i[0] for i in data],[i[1] for i in data],'ob', markersize=1.0)
-# plt.show()
+    # plt.plot(left[0],left[1], 'or', markersize=1.0)
+    # plt.plot(right[0],right[1], 'or', markersize=1.0)
+    plt.plot(waypoints[0], waypoints[1], 'or', markersize=1.0)
+    # plt.plot(x,arcPointsLeftBottom_y, '-or')
+    plt.plot([i[0] for i in data],[i[1] for i in data],'ob', markersize=1.0)
+    plt.show()
 
 # change_for car
 home = '/sim_ws'
@@ -167,8 +168,8 @@ def floorUp(x):
 # interp speed
 sOffset = 1.0
 speed_max = 4.6
-speed_min = 1.2
-shortBufferOffset = 5
+speed_min = 1.5
+shortBufferOffset = 4
 longBufferOffset = 5
 short_buffer = floorUp(2*arcPointsNum/3 + shortBufferOffset)
 long_buffer = floorUp(arcPointsNum/3 + longBufferOffset)
