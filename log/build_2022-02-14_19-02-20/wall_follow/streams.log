@@ -1,0 +1,28 @@
+[1.345s] Invoking command in '/f1tenth_ws/build/wall_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/wall_follow -- -j6 -l6
+[1.590s] [100%] Built target wall_follow_node
+[2.354s] Invoked command in '/f1tenth_ws/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/wall_follow -- -j6 -l6
+[2.484s] Invoking command in '/f1tenth_ws/build/wall_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/wall_follow
+[2.546s] -- Install configuration: ""
+[2.549s] -- Up-to-date: /f1tenth_ws/install/wall_follow/lib/wall_follow/wall_follow_node
+[2.550s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/pythonpath.sh
+[2.551s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/pythonpath.dsv
+[2.551s] -- Up-to-date: /f1tenth_ws/install/wall_follow/lib/python3.8/site-packages/wall_follow
+[2.552s] -- Up-to-date: /f1tenth_ws/install/wall_follow/lib/python3.8/site-packages/wall_follow/__init__.py
+[2.730s] Listing '/f1tenth_ws/install/wall_follow/lib/python3.8/site-packages/wall_follow'...
+[2.754s] -- Up-to-date: /f1tenth_ws/install/wall_follow/lib/wall_follow/wall_follow_node.py
+[2.755s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/ament_index/resource_index/package_run_dependencies/wall_follow
+[2.755s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/ament_index/resource_index/parent_prefix_path/wall_follow
+[2.756s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/ament_prefix_path.sh
+[2.756s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/ament_prefix_path.dsv
+[2.758s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/path.sh
+[2.760s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/path.dsv
+[2.761s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.bash
+[2.767s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.sh
+[2.775s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.zsh
+[2.776s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.dsv
+[2.777s] -- Installing: /f1tenth_ws/install/wall_follow/share/wall_follow/package.dsv
+[2.777s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/ament_index/resource_index/packages/wall_follow
+[2.778s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/cmake/wall_followConfig.cmake
+[2.779s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/cmake/wall_followConfig-version.cmake
+[2.780s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/package.xml
+[2.781s] Invoked command in '/f1tenth_ws/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/wall_follow

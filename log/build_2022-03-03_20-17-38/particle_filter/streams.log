@@ -1,0 +1,17 @@
+[1.493s] Invoking command in '/f1tenth_ws/src/particle_filter': PYTHONPATH=/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/particle_filter build --build-base /f1tenth_ws/build/particle_filter/build install --prefix /f1tenth_ws/install/particle_filter --record /f1tenth_ws/build/particle_filter/install.log --single-version-externally-managed
+[2.398s] running egg_info
+[2.401s] writing ../../build/particle_filter/particle_filter.egg-info/PKG-INFO
+[2.402s] writing dependency_links to ../../build/particle_filter/particle_filter.egg-info/dependency_links.txt
+[2.403s] writing entry points to ../../build/particle_filter/particle_filter.egg-info/entry_points.txt
+[2.404s] writing requirements to ../../build/particle_filter/particle_filter.egg-info/requires.txt
+[2.404s] writing top-level names to ../../build/particle_filter/particle_filter.egg-info/top_level.txt
+[2.606s] reading manifest file '../../build/particle_filter/particle_filter.egg-info/SOURCES.txt'
+[2.607s] writing manifest file '../../build/particle_filter/particle_filter.egg-info/SOURCES.txt'
+[2.607s] running build
+[2.607s] running build_py
+[2.608s] running install
+[2.616s] running install_lib
+[2.621s] running install_data
+[2.622s] copying maps/levine.pgm -> /f1tenth_ws/install/particle_filter/share/particle_filter/maps
+[2.648s] error: can't copy 'maps/backup': doesn't exist or not a regular file
+[2.741s] Invoked command in '/f1tenth_ws/src/particle_filter' returned '1': PYTHONPATH=/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/particle_filter build --build-base /f1tenth_ws/build/particle_filter/build install --prefix /f1tenth_ws/install/particle_filter --record /f1tenth_ws/build/particle_filter/install.log --single-version-externally-managed

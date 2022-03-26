@@ -1,0 +1,717 @@
+[0.000000] (-) TimerEvent: {}
+[0.001350] (ackermann_mux) JobQueued: {'identifier': 'ackermann_mux', 'dependencies': OrderedDict()}
+[0.003169] (key_teleop) JobQueued: {'identifier': 'key_teleop', 'dependencies': OrderedDict()}
+[0.003402] (mouse_teleop) JobQueued: {'identifier': 'mouse_teleop', 'dependencies': OrderedDict()}
+[0.004167] (particle_filter) JobQueued: {'identifier': 'particle_filter', 'dependencies': OrderedDict()}
+[0.004334] (teleop_tools_msgs) JobQueued: {'identifier': 'teleop_tools_msgs', 'dependencies': OrderedDict()}
+[0.005891] (vesc_msgs) JobQueued: {'identifier': 'vesc_msgs', 'dependencies': OrderedDict()}
+[0.006085] (joy_teleop) JobQueued: {'identifier': 'joy_teleop', 'dependencies': OrderedDict([('teleop_tools_msgs', '/f1tenth_ws/install/teleop_tools_msgs')])}
+[0.006247] (vesc_ackermann) JobQueued: {'identifier': 'vesc_ackermann', 'dependencies': OrderedDict([('vesc_msgs', '/f1tenth_ws/install/vesc_msgs')])}
+[0.006366] (vesc_driver) JobQueued: {'identifier': 'vesc_driver', 'dependencies': OrderedDict([('vesc_msgs', '/f1tenth_ws/install/vesc_msgs')])}
+[0.006476] (teleop_tools) JobQueued: {'identifier': 'teleop_tools', 'dependencies': OrderedDict([('key_teleop', '/f1tenth_ws/install/key_teleop'), ('teleop_tools_msgs', '/f1tenth_ws/install/teleop_tools_msgs'), ('joy_teleop', '/f1tenth_ws/install/joy_teleop')])}
+[0.006675] (vesc) JobQueued: {'identifier': 'vesc', 'dependencies': OrderedDict([('vesc_msgs', '/f1tenth_ws/install/vesc_msgs'), ('vesc_ackermann', '/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/f1tenth_ws/install/vesc_driver')])}
+[0.006835] (f1tenth_stack) JobQueued: {'identifier': 'f1tenth_stack', 'dependencies': OrderedDict([('ackermann_mux', '/f1tenth_ws/install/ackermann_mux'), ('teleop_tools_msgs', '/f1tenth_ws/install/teleop_tools_msgs'), ('vesc_msgs', '/f1tenth_ws/install/vesc_msgs'), ('joy_teleop', '/f1tenth_ws/install/joy_teleop'), ('vesc_ackermann', '/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/f1tenth_ws/install/vesc_driver'), ('vesc', '/f1tenth_ws/install/vesc')])}
+[0.006999] (vesc_msgs) JobStarted: {'identifier': 'vesc_msgs'}
+[0.055983] (teleop_tools_msgs) JobStarted: {'identifier': 'teleop_tools_msgs'}
+[0.081849] (ackermann_mux) JobStarted: {'identifier': 'ackermann_mux'}
+[0.098799] (-) TimerEvent: {}
+[0.113340] (key_teleop) JobStarted: {'identifier': 'key_teleop'}
+[0.160483] (mouse_teleop) JobStarted: {'identifier': 'mouse_teleop'}
+[0.192035] (particle_filter) JobStarted: {'identifier': 'particle_filter'}
+[0.200792] (-) TimerEvent: {}
+[0.246374] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'cmake'}
+[0.249985] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'build'}
+[0.254038] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/f1tenth_ws/build/vesc_msgs', '--', '-j6', '-l6'], 'cwd': '/f1tenth_ws/build/vesc_msgs', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/vesc_msgs'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.272117] (teleop_tools_msgs) JobProgress: {'identifier': 'teleop_tools_msgs', 'progress': 'cmake'}
+[0.278756] (teleop_tools_msgs) JobProgress: {'identifier': 'teleop_tools_msgs', 'progress': 'build'}
+[0.284494] (teleop_tools_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/f1tenth_ws/build/teleop_tools_msgs', '--', '-j6', '-l6'], 'cwd': '/f1tenth_ws/build/teleop_tools_msgs', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/teleop_tools_msgs'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.296367] (ackermann_mux) JobProgress: {'identifier': 'ackermann_mux', 'progress': 'cmake'}
+[0.297668] (ackermann_mux) JobProgress: {'identifier': 'ackermann_mux', 'progress': 'build'}
+[0.303181] (ackermann_mux) Command: {'cmd': ['/usr/bin/cmake', '--build', '/f1tenth_ws/build/ackermann_mux', '--', '-j6', '-l6'], 'cwd': '/f1tenth_ws/build/ackermann_mux', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/ackermann_mux'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.312874] (-) TimerEvent: {}
+[0.421212] (-) TimerEvent: {}
+[0.522822] (-) TimerEvent: {}
+[0.623847] (-) TimerEvent: {}
+[0.726488] (-) TimerEvent: {}
+[0.828864] (-) TimerEvent: {}
+[0.929880] (-) TimerEvent: {}
+[1.030997] (-) TimerEvent: {}
+[1.134289] (-) TimerEvent: {}
+[1.235840] (-) TimerEvent: {}
+[1.337607] (-) TimerEvent: {}
+[1.440455] (-) TimerEvent: {}
+[1.545067] (-) TimerEvent: {}
+[1.646910] (-) TimerEvent: {}
+[1.748167] (-) TimerEvent: {}
+[1.849211] (-) TimerEvent: {}
+[1.950212] (-) TimerEvent: {}
+[2.051336] (-) TimerEvent: {}
+[2.152727] (-) TimerEvent: {}
+[2.253805] (-) TimerEvent: {}
+[2.354852] (-) TimerEvent: {}
+[2.456667] (-) TimerEvent: {}
+[2.558783] (-) TimerEvent: {}
+[2.660011] (-) TimerEvent: {}
+[2.760916] (-) TimerEvent: {}
+[2.862062] (-) TimerEvent: {}
+[2.963240] (-) TimerEvent: {}
+[3.064328] (-) TimerEvent: {}
+[3.165460] (-) TimerEvent: {}
+[3.266566] (-) TimerEvent: {}
+[3.366748] (vesc_msgs) StdoutLine: {'line': b'[  1%] Built target vesc_msgs__cpp\n'}
+[3.371602] (-) TimerEvent: {}
+[3.372636] (vesc_msgs) StdoutLine: {'line': b'[ 12%] Built target vesc_msgs__rosidl_generator_c\n'}
+[3.375017] (vesc_msgs) StdoutLine: {'line': b'[ 23%] Built target vesc_msgs__rosidl_typesupport_cpp\n'}
+[3.375568] (vesc_msgs) StdoutLine: {'line': b'[ 34%] Built target vesc_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.376060] (vesc_msgs) StdoutLine: {'line': b'[ 45%] Built target vesc_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.376506] (vesc_msgs) StdoutLine: {'line': b'[ 56%] Built target vesc_msgs__rosidl_typesupport_c\n'}
+[3.376882] (vesc_msgs) StdoutLine: {'line': b'[ 67%] Built target vesc_msgs__rosidl_typesupport_introspection_c\n'}
+[3.377204] (vesc_msgs) StdoutLine: {'line': b'[ 78%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.377619] (vesc_msgs) StdoutLine: {'line': b'[ 78%] Built target vesc_msgs\n'}
+[3.378504] (vesc_msgs) StdoutLine: {'line': b'[ 80%] Built target vesc_msgs__py\n'}
+[3.384279] (vesc_msgs) StdoutLine: {'line': b'[ 89%] Built target vesc_msgs__python\n'}
+[3.386750] (vesc_msgs) StdoutLine: {'line': b'[ 92%] Built target vesc_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.390551] (vesc_msgs) StdoutLine: {'line': b'[ 96%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.393932] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target vesc_msgs__rosidl_typesupport_c__pyext\n'}
+[3.397518] (teleop_tools_msgs) StdoutLine: {'line': b'[  3%] Built target teleop_tools_msgs__cpp\n'}
+[3.402534] (teleop_tools_msgs) StdoutLine: {'line': b'[ 12%] Built target teleop_tools_msgs__rosidl_generator_c\n'}
+[3.403534] (teleop_tools_msgs) StdoutLine: {'line': b'[ 22%] Built target teleop_tools_msgs__rosidl_typesupport_cpp\n'}
+[3.404023] (teleop_tools_msgs) StdoutLine: {'line': b'[ 32%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.404473] (teleop_tools_msgs) StdoutLine: {'line': b'[ 41%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.404842] (teleop_tools_msgs) StdoutLine: {'line': b'[ 51%] Built target teleop_tools_msgs__rosidl_typesupport_c\n'}
+[3.405192] (teleop_tools_msgs) StdoutLine: {'line': b'[ 61%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_c\n'}
+[3.405510] (teleop_tools_msgs) StdoutLine: {'line': b'[ 70%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.405898] (teleop_tools_msgs) StdoutLine: {'line': b'[ 70%] Built target teleop_tools_msgs\n'}
+[3.406269] (teleop_tools_msgs) StdoutLine: {'line': b'[ 74%] Built target teleop_tools_msgs__py\n'}
+[3.406585] (teleop_tools_msgs) StdoutLine: {'line': b'[ 80%] Built target teleop_tools_msgs__python\n'}
+[3.406910] (teleop_tools_msgs) StdoutLine: {'line': b'[ 87%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.407218] (teleop_tools_msgs) StdoutLine: {'line': b'[ 93%] Built target teleop_tools_msgs__rosidl_typesupport_c__pyext\n'}
+[3.407675] (teleop_tools_msgs) StdoutLine: {'line': b'[100%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.408146] (ackermann_mux) StdoutLine: {'line': b'[100%] Built target ackermann_mux\n'}
+[3.408764] (vesc_msgs) CommandEnded: {'returncode': 0}
+[3.420731] (teleop_tools_msgs) CommandEnded: {'returncode': 0}
+[3.435538] (ackermann_mux) CommandEnded: {'returncode': 0}
+[3.449405] (key_teleop) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../../build/key_teleop', 'build', '--build-base', '/f1tenth_ws/build/key_teleop/build', 'install', '--prefix', '/f1tenth_ws/install/key_teleop', '--record', '/f1tenth_ws/build/key_teleop/install.log', '--single-version-externally-managed'], 'cwd': '/f1tenth_ws/src/f1tenth_system/teleop_tools/key_teleop', 'env': {'TMUX': '/tmp//tmux-0/default,34,2', 'HOSTNAME': 'ccribatch3car1-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:', 'HOME': '/root', 'OLDPWD': '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'ROS_DISTRO': 'foxy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'screen', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/foxy', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'PWD': '/f1tenth_ws/build/key_teleop', 'PYTHONPATH': '/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'TMUX_PANE': '%3'}, 'shell': False}
+[3.470162] (mouse_teleop) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../../build/mouse_teleop', 'build', '--build-base', '/f1tenth_ws/build/mouse_teleop/build', 'install', '--prefix', '/f1tenth_ws/install/mouse_teleop', '--record', '/f1tenth_ws/build/mouse_teleop/install.log', '--single-version-externally-managed'], 'cwd': '/f1tenth_ws/src/f1tenth_system/teleop_tools/mouse_teleop', 'env': {'TMUX': '/tmp//tmux-0/default,34,2', 'HOSTNAME': 'ccribatch3car1-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:', 'HOME': '/root', 'OLDPWD': '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'ROS_DISTRO': 'foxy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'screen', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/foxy', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'PWD': '/f1tenth_ws/build/mouse_teleop', 'PYTHONPATH': '/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'TMUX_PANE': '%3'}, 'shell': False}
+[3.473021] (-) TimerEvent: {}
+[3.492406] (particle_filter) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/particle_filter', 'build', '--build-base', '/f1tenth_ws/build/particle_filter/build', 'install', '--prefix', '/f1tenth_ws/install/particle_filter', '--record', '/f1tenth_ws/build/particle_filter/install.log', '--single-version-externally-managed'], 'cwd': '/f1tenth_ws/src/particle_filter', 'env': {'TMUX': '/tmp//tmux-0/default,34,2', 'HOSTNAME': 'ccribatch3car1-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:', 'HOME': '/root', 'OLDPWD': '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'ROS_DISTRO': 'foxy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'screen', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/foxy', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'PWD': '/f1tenth_ws/build/particle_filter', 'PYTHONPATH': '/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'TMUX_PANE': '%3'}, 'shell': False}
+[3.573985] (-) TimerEvent: {}
+[3.621341] (ackermann_mux) JobProgress: {'identifier': 'ackermann_mux', 'progress': 'install'}
+[3.669028] (ackermann_mux) Command: {'cmd': ['/usr/bin/cmake', '--install', '/f1tenth_ws/build/ackermann_mux'], 'cwd': '/f1tenth_ws/build/ackermann_mux', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/ackermann_mux'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[3.677401] (-) TimerEvent: {}
+[3.744541] (ackermann_mux) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.748844] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux\n'}
+[3.749442] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/launch\n'}
+[3.749828] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/launch/ackermann_mux_launch.py\n'}
+[3.750282] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config\n'}
+[3.750625] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_locks.yaml\n'}
+[3.752093] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_topics.yaml\n'}
+[3.752590] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/joystick.yaml\n'}
+[3.753061] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/include\n'}
+[3.753381] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/include/ackermann_mux\n'}
+[3.753688] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux.hpp\n'}
+[3.754011] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/include/ackermann_mux/topic_handle.hpp\n'}
+[3.754325] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/include/ackermann_mux/params_helpers.hpp\n'}
+[3.754644] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/include/ackermann_mux/utils.hpp\n'}
+[3.755749] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics.hpp\n'}
+[3.756955] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics_status.hpp\n'}
+[3.758168] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/package_run_dependencies/ackermann_mux\n'}
+[3.759503] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/parent_prefix_path/ackermann_mux\n'}
+[3.761094] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.sh\n'}
+[3.762237] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.dsv\n'}
+[3.763385] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.sh\n'}
+[3.764498] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.dsv\n'}
+[3.766028] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.bash\n'}
+[3.767493] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.sh\n'}
+[3.768665] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.zsh\n'}
+[3.770248] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.dsv\n'}
+[3.770816] (ackermann_mux) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.dsv\n'}
+[3.772845] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/packages/ackermann_mux\n'}
+[3.774662] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.776182] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.777389] (-) TimerEvent: {}
+[3.779463] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig.cmake\n'}
+[3.779938] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig-version.cmake\n'}
+[3.780830] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.xml\n'}
+[3.796197] (ackermann_mux) CommandEnded: {'returncode': 0}
+[3.879171] (-) TimerEvent: {}
+[3.889420] (teleop_tools_msgs) JobProgress: {'identifier': 'teleop_tools_msgs', 'progress': 'install'}
+[3.891473] (teleop_tools_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/f1tenth_ws/build/teleop_tools_msgs'], 'cwd': '/f1tenth_ws/build/teleop_tools_msgs', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/teleop_tools_msgs'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[3.958459] (teleop_tools_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.961225] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/ament_index/resource_index/rosidl_interfaces/teleop_tools_msgs\n'}
+[3.962491] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs\n'}
+[3.963599] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action\n'}
+[3.964526] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail\n'}
+[3.965414] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__functions.h\n'}
+[3.966158] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__struct.h\n'}
+[3.966871] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__functions.c\n'}
+[3.967703] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__type_support.h\n'}
+[3.968748] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/increment.h\n'}
+[3.969540] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/msg\n'}
+[3.970373] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.972074] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/library_path.sh\n'}
+[3.973165] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/library_path.dsv\n'}
+[3.975498] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_generator_c.so\n'}
+[3.977957] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs\n'}
+[3.978483] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action\n'}
+[3.980090] (-) TimerEvent: {}
+[3.981752] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail\n'}
+[3.982189] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_fastrtps_c.h\n'}
+[3.983346] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/msg\n'}
+[3.983691] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.984149] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.984449] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs\n'}
+[3.984731] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action\n'}
+[3.985521] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail\n'}
+[3.985920] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/dds_fastrtps\n'}
+[3.986241] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.986661] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/msg\n'}
+[3.987033] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.987560] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.987881] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs\n'}
+[3.989169] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action\n'}
+[3.989492] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail\n'}
+[3.989895] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__type_support.c\n'}
+[3.990711] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_introspection_c.h\n'}
+[3.991372] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/msg\n'}
+[3.991710] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.992017] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.994704] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_c.so\n'}
+[3.995944] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs\n'}
+[3.996821] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action\n'}
+[3.997412] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail\n'}
+[3.997715] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__builder.hpp\n'}
+[4.002057] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__struct.hpp\n'}
+[4.002548] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__traits.hpp\n'}
+[4.002853] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/increment.hpp\n'}
+[4.003128] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs\n'}
+[4.003555] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action\n'}
+[4.003901] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail\n'}
+[4.004227] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__type_support.cpp\n'}
+[4.005152] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.006659] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.007497] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_cpp.so\n'}
+[4.007977] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/pythonpath.sh\n'}
+[4.008322] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/pythonpath.dsv\n'}
+[4.008650] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/__init__.py\n'}
+[4.080326] (-) TimerEvent: {}
+[4.183332] (-) TimerEvent: {}
+[4.203512] (ackermann_mux) JobEnded: {'identifier': 'ackermann_mux', 'rc': 0}
+[4.206081] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/action\n'}
+[4.207201] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/action/_increment_s.c\n'}
+[4.208977] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/action/_increment.py\n'}
+[4.209399] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/action/__init__.py\n'}
+[4.216201] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.217061] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'install'}
+[4.217229] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.217916] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.227384] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/f1tenth_ws/build/vesc_msgs'], 'cwd': '/f1tenth_ws/build/vesc_msgs', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/vesc_msgs'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[4.231868] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/lib/libteleop_tools_msgs__python.so\n'}
+[4.233597] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/action/Increment.idl\n'}
+[4.234042] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/action/Increment.action\n'}
+[4.234389] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/ament_index/resource_index/package_run_dependencies/teleop_tools_msgs\n'}
+[4.234706] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/ament_index/resource_index/parent_prefix_path/teleop_tools_msgs\n'}
+[4.238535] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/ament_prefix_path.sh\n'}
+[4.239018] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/ament_prefix_path.dsv\n'}
+[4.239442] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/path.sh\n'}
+[4.239780] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/path.dsv\n'}
+[4.241009] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.bash\n'}
+[4.241970] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.sh\n'}
+[4.243068] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.zsh\n'}
+[4.244550] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.dsv\n'}
+[4.249018] (teleop_tools_msgs) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/package.dsv\n'}
+[4.250184] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/ament_index/resource_index/packages/teleop_tools_msgs\n'}
+[4.251740] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_generator_cExport.cmake\n'}
+[4.252804] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.256050] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.256692] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.259148] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.260258] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.261791] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.263459] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.264468] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.266152] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.267204] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.268631] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.269651] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.270639] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.272014] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.273370] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.274306] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.275248] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.277198] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgsConfig.cmake\n'}
+[4.278305] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgsConfig-version.cmake\n'}
+[4.279787] (teleop_tools_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools_msgs/share/teleop_tools_msgs/package.xml\n'}
+[4.283429] (-) TimerEvent: {}
+[4.299842] (vesc_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.300672] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/ament_index/resource_index/rosidl_interfaces/vesc_msgs\n'}
+[4.301387] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs\n'}
+[4.302053] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg\n'}
+[4.302498] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/vesc_state_stamped.h\n'}
+[4.303189] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/vesc_state.h\n'}
+[4.304061] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/vesc_imu_stamped.h\n'}
+[4.304467] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/vesc_imu.h\n'}
+[4.304827] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail\n'}
+[4.305691] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c\n'}
+[4.306115] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__struct.h\n'}
+[4.306520] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__functions.c\n'}
+[4.306831] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__type_support.h\n'}
+[4.307109] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__functions.c\n'}
+[4.307604] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.h\n'}
+[4.307960] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__functions.h\n'}
+[4.308278] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__struct.h\n'}
+[4.309107] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__type_support.h\n'}
+[4.330128] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__type_support.h\n'}
+[4.330620] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__functions.c\n'}
+[4.331021] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__functions.h\n'}
+[4.331471] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__functions.h\n'}
+[4.331834] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__struct.h\n'}
+[4.332201] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__struct.h\n'}
+[4.332525] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__functions.h\n'}
+[4.332844] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.333168] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/environment/library_path.sh\n'}
+[4.333475] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/environment/library_path.dsv\n'}
+[4.333824] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_generator_c.so\n'}
+[4.334143] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs\n'}
+[4.334494] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg\n'}
+[4.334839] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail\n'}
+[4.335210] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_fastrtps_c.h\n'}
+[4.335710] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[4.336045] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[4.336342] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_fastrtps_c.h\n'}
+[4.336688] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.336968] (teleop_tools_msgs) CommandEnded: {'returncode': 0}
+[4.348282] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.348750] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs\n'}
+[4.349091] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg\n'}
+[4.349390] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.349687] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail\n'}
+[4.350022] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.350336] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.350622] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/dds_fastrtps\n'}
+[4.350900] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.351230] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.351866] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.352336] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs\n'}
+[4.352665] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg\n'}
+[4.352971] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.355244] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail\n'}
+[4.355838] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__type_support.c\n'}
+[4.356172] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_introspection_c.h\n'}
+[4.356509] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__type_support.c\n'}
+[4.356838] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_introspection_c.h\n'}
+[4.357142] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_introspection_c.h\n'}
+[4.357495] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_introspection_c.h\n'}
+[4.357799] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c\n'}
+[4.358094] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__type_support.c\n'}
+[4.358404] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.371861] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_c.so\n'}
+[4.372292] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs\n'}
+[4.372614] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg\n'}
+[4.372894] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/vesc_state.hpp\n'}
+[4.373169] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/vesc_imu_stamped.hpp\n'}
+[4.373529] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/vesc_imu.hpp\n'}
+[4.373821] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail\n'}
+[4.374223] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__struct.hpp\n'}
+[4.374543] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__builder.hpp\n'}
+[4.374907] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__traits.hpp\n'}
+[4.375234] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__builder.hpp\n'}
+[4.375647] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__struct.hpp\n'}
+[4.375924] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__struct.hpp\n'}
+[4.376195] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__traits.hpp\n'}
+[4.376503] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__traits.hpp\n'}
+[4.376808] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__builder.hpp\n'}
+[4.377078] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__traits.hpp\n'}
+[4.377409] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__builder.hpp\n'}
+[4.377736] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__struct.hpp\n'}
+[4.378114] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/vesc_state_stamped.hpp\n'}
+[4.378473] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs\n'}
+[4.379393] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg\n'}
+[4.379792] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail\n'}
+[4.380116] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__type_support.cpp\n'}
+[4.380430] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.380707] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state_stamped__type_support.cpp\n'}
+[4.381011] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__type_support.cpp\n'}
+[4.381310] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.381709] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.381996] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp\n'}
+[4.382282] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/include/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.382584] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.382860] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_cpp.so\n'}
+[4.383241] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/environment/pythonpath.sh\n'}
+[4.383692] (-) TimerEvent: {}
+[4.384381] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/environment/pythonpath.dsv\n'}
+[4.384946] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/__init__.py\n'}
+[4.485419] (-) TimerEvent: {}
+[4.542115] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/msg\n'}
+[4.545180] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/msg/_vesc_state.py\n'}
+[4.545802] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/msg/_vesc_imu_s.c\n'}
+[4.546238] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/msg/_vesc_imu.py\n'}
+[4.546588] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/msg/_vesc_state_stamped_s.c\n'}
+[4.546941] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/msg/_vesc_state_s.c\n'}
+[4.547464] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/msg/_vesc_imu_stamped.py\n'}
+[4.547885] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/msg/_vesc_imu_stamped_s.c\n'}
+[4.548241] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/msg/_vesc_state_stamped.py\n'}
+[4.548559] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/msg/__init__.py\n'}
+[4.548903] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.551457] (key_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[4.553535] (key_teleop) StdoutLine: {'line': b'writing ../../../../build/key_teleop/key_teleop.egg-info/PKG-INFO\n'}
+[4.555812] (key_teleop) StdoutLine: {'line': b'writing dependency_links to ../../../../build/key_teleop/key_teleop.egg-info/dependency_links.txt\n'}
+[4.556242] (key_teleop) StdoutLine: {'line': b'writing entry points to ../../../../build/key_teleop/key_teleop.egg-info/entry_points.txt\n'}
+[4.556606] (key_teleop) StdoutLine: {'line': b'writing requirements to ../../../../build/key_teleop/key_teleop.egg-info/requires.txt\n'}
+[4.557010] (key_teleop) StdoutLine: {'line': b'writing top-level names to ../../../../build/key_teleop/key_teleop.egg-info/top_level.txt\n'}
+[4.557345] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.557697] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.563104] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/lib/libvesc_msgs__python.so\n'}
+[4.568502] (mouse_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[4.569662] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/msg/VescState.idl\n'}
+[4.570191] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/msg/VescStateStamped.idl\n'}
+[4.576464] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImu.idl\n'}
+[4.577281] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImuStamped.idl\n'}
+[4.577672] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/msg/VescState.msg\n'}
+[4.578013] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/msg/VescStateStamped.msg\n'}
+[4.578335] (mouse_teleop) StdoutLine: {'line': b'writing ../../../../build/mouse_teleop/mouse_teleop.egg-info/PKG-INFO\n'}
+[4.579609] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImu.msg\n'}
+[4.580212] (mouse_teleop) StdoutLine: {'line': b'writing dependency_links to ../../../../build/mouse_teleop/mouse_teleop.egg-info/dependency_links.txt\n'}
+[4.581277] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImuStamped.msg\n'}
+[4.581720] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/ament_index/resource_index/package_run_dependencies/vesc_msgs\n'}
+[4.582465] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/ament_index/resource_index/parent_prefix_path/vesc_msgs\n'}
+[4.582822] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/environment/ament_prefix_path.sh\n'}
+[4.583149] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/environment/ament_prefix_path.dsv\n'}
+[4.583545] (mouse_teleop) StdoutLine: {'line': b'writing entry points to ../../../../build/mouse_teleop/mouse_teleop.egg-info/entry_points.txt\n'}
+[4.584162] (mouse_teleop) StdoutLine: {'line': b'writing requirements to ../../../../build/mouse_teleop/mouse_teleop.egg-info/requires.txt\n'}
+[4.584702] (mouse_teleop) StdoutLine: {'line': b'writing top-level names to ../../../../build/mouse_teleop/mouse_teleop.egg-info/top_level.txt\n'}
+[4.585231] (-) TimerEvent: {}
+[4.586322] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/environment/path.sh\n'}
+[4.586740] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/environment/path.dsv\n'}
+[4.587115] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/local_setup.bash\n'}
+[4.587504] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/local_setup.sh\n'}
+[4.587848] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/local_setup.zsh\n'}
+[4.588801] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/local_setup.dsv\n'}
+[4.589165] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/package.dsv\n'}
+[4.589531] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/ament_index/resource_index/packages/vesc_msgs\n'}
+[4.589861] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_generator_cExport.cmake\n'}
+[4.590194] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.593767] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.594158] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.597165] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.599241] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.599707] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.600048] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.628438] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.628955] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.629305] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.629607] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.629930] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.630273] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.631195] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.631658] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.632001] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.632292] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.632577] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgsConfig.cmake\n'}
+[4.632841] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgsConfig-version.cmake\n'}
+[4.633107] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_msgs/share/vesc_msgs/package.xml\n'}
+[4.633368] (vesc_msgs) CommandEnded: {'returncode': 0}
+[4.668204] (particle_filter) StdoutLine: {'line': b'running egg_info\n'}
+[4.672204] (particle_filter) StdoutLine: {'line': b'writing ../../build/particle_filter/particle_filter.egg-info/PKG-INFO\n'}
+[4.672733] (particle_filter) StdoutLine: {'line': b'writing dependency_links to ../../build/particle_filter/particle_filter.egg-info/dependency_links.txt\n'}
+[4.673313] (particle_filter) StdoutLine: {'line': b'writing entry points to ../../build/particle_filter/particle_filter.egg-info/entry_points.txt\n'}
+[4.683535] (particle_filter) StdoutLine: {'line': b'writing requirements to ../../build/particle_filter/particle_filter.egg-info/requires.txt\n'}
+[4.684010] (particle_filter) StdoutLine: {'line': b'writing top-level names to ../../build/particle_filter/particle_filter.egg-info/top_level.txt\n'}
+[4.685733] (-) TimerEvent: {}
+[4.747761] (key_teleop) StdoutLine: {'line': b"reading manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'\n"}
+[4.749344] (key_teleop) StdoutLine: {'line': b"writing manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'\n"}
+[4.749816] (key_teleop) StdoutLine: {'line': b'running build\n'}
+[4.750201] (key_teleop) StdoutLine: {'line': b'running build_py\n'}
+[4.751198] (key_teleop) StdoutLine: {'line': b'running install\n'}
+[4.752349] (key_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[4.758544] (key_teleop) StdoutLine: {'line': b'running install_data\n'}
+[4.763632] (key_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.772263] (key_teleop) StdoutLine: {'line': b"removing '/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop-0.3.0-py3.8.egg-info' (and everything under it)\n"}
+[4.772914] (key_teleop) StdoutLine: {'line': b'Copying ../../../../build/key_teleop/key_teleop.egg-info to /f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop-0.3.0-py3.8.egg-info\n'}
+[4.774016] (mouse_teleop) StdoutLine: {'line': b"reading manifest file '../../../../build/mouse_teleop/mouse_teleop.egg-info/SOURCES.txt'\n"}
+[4.774776] (key_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[4.777433] (mouse_teleop) StdoutLine: {'line': b"writing manifest file '../../../../build/mouse_teleop/mouse_teleop.egg-info/SOURCES.txt'\n"}
+[4.778211] (mouse_teleop) StdoutLine: {'line': b'running build\n'}
+[4.778616] (mouse_teleop) StdoutLine: {'line': b'running build_py\n'}
+[4.779133] (mouse_teleop) StdoutLine: {'line': b'running install\n'}
+[4.782594] (mouse_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[4.785970] (-) TimerEvent: {}
+[4.792840] (mouse_teleop) StdoutLine: {'line': b'running install_data\n'}
+[4.793409] (mouse_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.801970] (mouse_teleop) StdoutLine: {'line': b"removing '/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop-0.3.0-py3.8.egg-info' (and everything under it)\n"}
+[4.804099] (mouse_teleop) StdoutLine: {'line': b'Copying ../../../../build/mouse_teleop/mouse_teleop.egg-info to /f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop-0.3.0-py3.8.egg-info\n'}
+[4.812905] (mouse_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[4.858093] (particle_filter) StdoutLine: {'line': b"reading manifest file '../../build/particle_filter/particle_filter.egg-info/SOURCES.txt'\n"}
+[4.865418] (particle_filter) StdoutLine: {'line': b"writing manifest file '../../build/particle_filter/particle_filter.egg-info/SOURCES.txt'\n"}
+[4.866038] (particle_filter) StdoutLine: {'line': b'running build\n'}
+[4.866437] (particle_filter) StdoutLine: {'line': b'running build_py\n'}
+[4.866885] (particle_filter) StdoutLine: {'line': b'running install\n'}
+[4.869905] (key_teleop) StdoutLine: {'line': b'Installing key_teleop script to /f1tenth_ws/install/key_teleop/lib/key_teleop\n'}
+[4.870498] (key_teleop) StdoutLine: {'line': b"writing list of installed files to '/f1tenth_ws/build/key_teleop/install.log'\n"}
+[4.874113] (particle_filter) StdoutLine: {'line': b'running install_lib\n'}
+[4.876704] (particle_filter) StdoutLine: {'line': b'running install_data\n'}
+[4.878738] (particle_filter) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.887638] (-) TimerEvent: {}
+[4.891146] (particle_filter) StdoutLine: {'line': b"removing '/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages/particle_filter-0.2.0-py3.8.egg-info' (and everything under it)\n"}
+[4.891720] (particle_filter) StdoutLine: {'line': b'Copying ../../build/particle_filter/particle_filter.egg-info to /f1tenth_ws/install/particle_filter/lib/python3.8/site-packages/particle_filter-0.2.0-py3.8.egg-info\n'}
+[4.892107] (particle_filter) StdoutLine: {'line': b'running install_scripts\n'}
+[4.925635] (mouse_teleop) StdoutLine: {'line': b'Installing mouse_teleop script to /f1tenth_ws/install/mouse_teleop/lib/mouse_teleop\n'}
+[4.926337] (mouse_teleop) StdoutLine: {'line': b"writing list of installed files to '/f1tenth_ws/build/mouse_teleop/install.log'\n"}
+[4.953740] (teleop_tools_msgs) JobEnded: {'identifier': 'teleop_tools_msgs', 'rc': 0}
+[4.956167] (joy_teleop) JobStarted: {'identifier': 'joy_teleop'}
+[4.988429] (particle_filter) StdoutLine: {'line': b'Installing particle_filter script to /f1tenth_ws/install/particle_filter/lib/particle_filter\n'}
+[4.989145] (-) TimerEvent: {}
+[4.995495] (particle_filter) StdoutLine: {'line': b"writing list of installed files to '/f1tenth_ws/build/particle_filter/install.log'\n"}
+[5.019432] (key_teleop) CommandEnded: {'returncode': 0}
+[5.066651] (key_teleop) JobEnded: {'identifier': 'key_teleop', 'rc': 0}
+[5.089860] (-) TimerEvent: {}
+[5.195898] (-) TimerEvent: {}
+[5.297000] (-) TimerEvent: {}
+[5.397995] (-) TimerEvent: {}
+[5.499017] (-) TimerEvent: {}
+[5.600159] (-) TimerEvent: {}
+[5.701229] (-) TimerEvent: {}
+[5.802360] (-) TimerEvent: {}
+[5.903392] (-) TimerEvent: {}
+[6.004436] (-) TimerEvent: {}
+[6.079758] (mouse_teleop) CommandEnded: {'returncode': 0}
+[6.105232] (-) TimerEvent: {}
+[6.117130] (mouse_teleop) JobEnded: {'identifier': 'mouse_teleop', 'rc': 0}
+[6.126442] (particle_filter) CommandEnded: {'returncode': 0}
+[6.155460] (particle_filter) JobEnded: {'identifier': 'particle_filter', 'rc': 0}
+[6.205453] (vesc_msgs) JobEnded: {'identifier': 'vesc_msgs', 'rc': 0}
+[6.215806] (-) TimerEvent: {}
+[6.220066] (vesc_ackermann) JobStarted: {'identifier': 'vesc_ackermann'}
+[6.231693] (vesc_driver) JobStarted: {'identifier': 'vesc_driver'}
+[6.267467] (joy_teleop) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../../build/joy_teleop', 'build', '--build-base', '/f1tenth_ws/build/joy_teleop/build', 'install', '--prefix', '/f1tenth_ws/install/joy_teleop', '--record', '/f1tenth_ws/build/joy_teleop/install.log', '--single-version-externally-managed'], 'cwd': '/f1tenth_ws/src/f1tenth_system/teleop_tools/joy_teleop', 'env': {'TMUX': '/tmp//tmux-0/default,34,2', 'HOSTNAME': 'ccribatch3car1-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib', 'HOME': '/root', 'OLDPWD': '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'ROS_DISTRO': 'foxy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'screen', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/foxy', 'AMENT_PREFIX_PATH': '/f1tenth_ws/install/teleop_tools_msgs:/opt/ros/foxy', 'SHELL': '/bin/bash', 'PWD': '/f1tenth_ws/build/joy_teleop', 'PYTHONPATH': '/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'TMUX_PANE': '%3', 'CMAKE_PREFIX_PATH': '/f1tenth_ws/install/teleop_tools_msgs'}, 'shell': False}
+[6.289784] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'cmake'}
+[6.300240] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'build'}
+[6.300613] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--build', '/f1tenth_ws/build/vesc_ackermann', '--', '-j6', '-l6'], 'cwd': '/f1tenth_ws/build/vesc_ackermann', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/vesc_ackermann'), ('PYTHONPATH', '/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy')]), 'shell': False}
+[6.313769] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'cmake'}
+[6.314846] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'build'}
+[6.320899] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/f1tenth_ws/build/vesc_driver', '--', '-j6', '-l6'], 'cwd': '/f1tenth_ws/build/vesc_driver', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/vesc_driver'), ('PYTHONPATH', '/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy')]), 'shell': False}
+[6.328990] (-) TimerEvent: {}
+[6.433003] (-) TimerEvent: {}
+[6.536104] (-) TimerEvent: {}
+[6.592142] (vesc_ackermann) StdoutLine: {'line': b'[ 28%] Built target ackermann_to_vesc_node\n'}
+[6.605331] (vesc_ackermann) StdoutLine: {'line': b'[ 57%] Built target vesc_to_odom_node\n'}
+[6.619480] (vesc_ackermann) StdoutLine: {'line': b'[100%] Built target vesc_ackermann\n'}
+[6.626229] (vesc_driver) StdoutLine: {'line': b'[ 50%] Built target vesc_driver_node\n'}
+[6.626937] (vesc_driver) StdoutLine: {'line': b'[ 70%] Built target vesc_driver\n'}
+[6.634398] (-) TimerEvent: {}
+[6.691363] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[6.734826] (-) TimerEvent: {}
+[6.740757] (vesc_driver) StdoutLine: {'line': b'[100%] Built target vesc_device_namer\n'}
+[6.786619] (vesc_driver) CommandEnded: {'returncode': 0}
+[6.835131] (-) TimerEvent: {}
+[6.846763] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'install'}
+[6.852007] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--install', '/f1tenth_ws/build/vesc_ackermann'], 'cwd': '/f1tenth_ws/build/vesc_ackermann', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/vesc_ackermann'), ('PYTHONPATH', '/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy')]), 'shell': False}
+[6.891493] (vesc_ackermann) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.892294] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node\n'}
+[6.895598] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node\n'}
+[6.897315] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/include\n'}
+[6.897715] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann\n'}
+[6.898098] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp\n'}
+[6.898418] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp\n'}
+[6.898776] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh\n'}
+[6.899124] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv\n'}
+[6.899603] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/lib/libvesc_ackermann.so\n'}
+[6.900269] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch\n'}
+[6.902585] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml\n'}
+[6.903175] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml\n'}
+[6.905162] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann\n'}
+[6.907920] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann\n'}
+[6.909405] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh\n'}
+[6.909839] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv\n'}
+[6.912285] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh\n'}
+[6.913123] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv\n'}
+[6.913482] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash\n'}
+[6.913867] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh\n'}
+[6.915937] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh\n'}
+[6.925612] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv\n'}
+[6.930227] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv\n'}
+[6.932074] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann\n'}
+[6.932482] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann\n'}
+[6.933395] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.936794] (-) TimerEvent: {}
+[6.937630] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.938024] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.938368] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake\n'}
+[6.938744] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake\n'}
+[6.939048] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml\n'}
+[6.939411] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[7.005477] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'install'}
+[7.008662] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/f1tenth_ws/build/vesc_driver'], 'cwd': '/f1tenth_ws/build/vesc_driver', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/vesc_driver'), ('PYTHONPATH', '/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy')]), 'shell': False}
+[7.038726] (-) TimerEvent: {}
+[7.056398] (vesc_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.057730] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/lib/vesc_driver/vesc_driver_node\n'}
+[7.058395] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/include\n'}
+[7.058803] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/include/vesc_driver\n'}
+[7.059625] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/include/vesc_driver/vesc_device_uuid_lookup.hpp\n'}
+[7.060065] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/include/vesc_driver/vesc_packet_factory.hpp\n'}
+[7.060427] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/include/vesc_driver/datatypes.hpp\n'}
+[7.061194] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/include/vesc_driver/vesc_interface.hpp\n'}
+[7.061578] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/include/vesc_driver/vesc_driver.hpp\n'}
+[7.062954] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/include/vesc_driver/crc.hpp\n'}
+[7.063894] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/include/vesc_driver/vesc_packet.hpp\n'}
+[7.064488] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/library_path.sh\n'}
+[7.065031] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/library_path.dsv\n'}
+[7.066369] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/lib/libvesc_driver.so\n'}
+[7.073052] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/lib/vesc_driver/vesc_device_namer\n'}
+[7.073642] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/launch\n'}
+[7.074498] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/launch/vesc_driver_node.launch.py\n'}
+[7.075586] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/params\n'}
+[7.076290] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/params/vesc_config.yaml\n'}
+[7.076719] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/ament_index/resource_index/package_run_dependencies/vesc_driver\n'}
+[7.077047] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/ament_index/resource_index/parent_prefix_path/vesc_driver\n'}
+[7.078547] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.sh\n'}
+[7.078885] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.dsv\n'}
+[7.079247] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/path.sh\n'}
+[7.079722] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/path.dsv\n'}
+[7.080119] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/local_setup.bash\n'}
+[7.080422] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/local_setup.sh\n'}
+[7.080722] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/local_setup.zsh\n'}
+[7.081056] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/local_setup.dsv\n'}
+[7.084951] (vesc_driver) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/vesc_driver/share/vesc_driver/package.dsv\n'}
+[7.085576] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/ament_index/resource_index/packages/vesc_driver\n'}
+[7.086104] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/ament_index/resource_index/rclcpp_components/vesc_driver\n'}
+[7.086604] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.086925] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.087225] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.087569] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig.cmake\n'}
+[7.087852] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig-version.cmake\n'}
+[7.098040] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc_driver/share/vesc_driver/package.xml\n'}
+[7.099822] (vesc_driver) CommandEnded: {'returncode': 0}
+[7.138914] (-) TimerEvent: {}
+[7.225969] (vesc_ackermann) JobEnded: {'identifier': 'vesc_ackermann', 'rc': 0}
+[7.239202] (-) TimerEvent: {}
+[7.299427] (joy_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[7.301981] (joy_teleop) StdoutLine: {'line': b'writing ../../../../build/joy_teleop/joy_teleop.egg-info/PKG-INFO\n'}
+[7.309683] (joy_teleop) StdoutLine: {'line': b'writing dependency_links to ../../../../build/joy_teleop/joy_teleop.egg-info/dependency_links.txt\n'}
+[7.311823] (joy_teleop) StdoutLine: {'line': b'writing entry points to ../../../../build/joy_teleop/joy_teleop.egg-info/entry_points.txt\n'}
+[7.314509] (joy_teleop) StdoutLine: {'line': b'writing requirements to ../../../../build/joy_teleop/joy_teleop.egg-info/requires.txt\n'}
+[7.315808] (joy_teleop) StdoutLine: {'line': b'writing top-level names to ../../../../build/joy_teleop/joy_teleop.egg-info/top_level.txt\n'}
+[7.340316] (-) TimerEvent: {}
+[7.346592] (vesc_driver) JobEnded: {'identifier': 'vesc_driver', 'rc': 0}
+[7.358928] (vesc) JobStarted: {'identifier': 'vesc'}
+[7.409576] (vesc) JobProgress: {'identifier': 'vesc', 'progress': 'cmake'}
+[7.418641] (vesc) JobProgress: {'identifier': 'vesc', 'progress': 'build'}
+[7.419941] (vesc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/f1tenth_ws/build/vesc', '--', '-j6', '-l6'], 'cwd': '/f1tenth_ws/build/vesc', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/f1tenth_ws/install/vesc_driver/lib:/f1tenth_ws/install/vesc_ackermann/lib:/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/vesc'), ('PYTHONPATH', '/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy')]), 'shell': False}
+[7.440573] (-) TimerEvent: {}
+[7.495849] (joy_teleop) StdoutLine: {'line': b"reading manifest file '../../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'\n"}
+[7.501543] (joy_teleop) StdoutLine: {'line': b"writing manifest file '../../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'\n"}
+[7.502241] (joy_teleop) StdoutLine: {'line': b'running build\n'}
+[7.502598] (joy_teleop) StdoutLine: {'line': b'running build_py\n'}
+[7.503683] (joy_teleop) StdoutLine: {'line': b'running install\n'}
+[7.507455] (joy_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[7.514369] (joy_teleop) StdoutLine: {'line': b'running install_data\n'}
+[7.516796] (joy_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.525085] (joy_teleop) StdoutLine: {'line': b"removing '/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop-0.3.0-py3.8.egg-info' (and everything under it)\n"}
+[7.526323] (joy_teleop) StdoutLine: {'line': b'Copying ../../../../build/joy_teleop/joy_teleop.egg-info to /f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop-0.3.0-py3.8.egg-info\n'}
+[7.530343] (joy_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[7.540715] (-) TimerEvent: {}
+[7.578744] (vesc) CommandEnded: {'returncode': 0}
+[7.608336] (joy_teleop) StdoutLine: {'line': b'Installing incrementer_server script to /f1tenth_ws/install/joy_teleop/lib/joy_teleop\n'}
+[7.610226] (joy_teleop) StdoutLine: {'line': b'Installing joy_teleop script to /f1tenth_ws/install/joy_teleop/lib/joy_teleop\n'}
+[7.610988] (joy_teleop) StdoutLine: {'line': b"writing list of installed files to '/f1tenth_ws/build/joy_teleop/install.log'\n"}
+[7.641444] (-) TimerEvent: {}
+[7.676299] (vesc) JobProgress: {'identifier': 'vesc', 'progress': 'install'}
+[7.677418] (vesc) Command: {'cmd': ['/usr/bin/cmake', '--install', '/f1tenth_ws/build/vesc'], 'cwd': '/f1tenth_ws/build/vesc', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/f1tenth_ws/install/vesc_driver/lib:/f1tenth_ws/install/vesc_ackermann/lib:/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/vesc'), ('PYTHONPATH', '/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy')]), 'shell': False}
+[7.710272] (vesc) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.715525] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/ament_index/resource_index/package_run_dependencies/vesc\n'}
+[7.716220] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/ament_index/resource_index/parent_prefix_path/vesc\n'}
+[7.716574] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/vesc/environment/ament_prefix_path.sh\n'}
+[7.721084] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/vesc/environment/ament_prefix_path.dsv\n'}
+[7.721839] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/vesc/environment/path.sh\n'}
+[7.724499] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/vesc/environment/path.dsv\n'}
+[7.725460] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/vesc/local_setup.bash\n'}
+[7.731749] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/vesc/local_setup.sh\n'}
+[7.732171] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/vesc/local_setup.zsh\n'}
+[7.732482] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/vesc/local_setup.dsv\n'}
+[7.732753] (vesc) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/vesc/share/vesc/package.dsv\n'}
+[7.733041] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/ament_index/resource_index/packages/vesc\n'}
+[7.733343] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/vesc/cmake/vescConfig.cmake\n'}
+[7.733676] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/vesc/cmake/vescConfig-version.cmake\n'}
+[7.734038] (vesc) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/vesc/share/vesc/package.xml\n'}
+[7.734335] (joy_teleop) CommandEnded: {'returncode': 0}
+[7.742497] (-) TimerEvent: {}
+[7.770596] (joy_teleop) JobEnded: {'identifier': 'joy_teleop', 'rc': 0}
+[7.777806] (vesc) CommandEnded: {'returncode': 0}
+[7.821302] (teleop_tools) JobStarted: {'identifier': 'teleop_tools'}
+[7.843807] (-) TimerEvent: {}
+[7.881907] (teleop_tools) JobProgress: {'identifier': 'teleop_tools', 'progress': 'cmake'}
+[7.884884] (teleop_tools) JobProgress: {'identifier': 'teleop_tools', 'progress': 'build'}
+[7.887374] (teleop_tools) Command: {'cmd': ['/usr/bin/cmake', '--build', '/f1tenth_ws/build/teleop_tools', '--', '-j6', '-l6'], 'cwd': '/f1tenth_ws/build/teleop_tools', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/teleop_tools_msgs:/f1tenth_ws/install/key_teleop:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/teleop_tools'), ('PYTHONPATH', '/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/teleop_tools_msgs:/opt/ros/foxy')]), 'shell': False}
+[7.946380] (-) TimerEvent: {}
+[7.960753] (vesc) JobEnded: {'identifier': 'vesc', 'rc': 0}
+[7.964412] (f1tenth_stack) JobStarted: {'identifier': 'f1tenth_stack'}
+[8.046874] (-) TimerEvent: {}
+[8.152485] (-) TimerEvent: {}
+[8.255923] (-) TimerEvent: {}
+[8.356850] (-) TimerEvent: {}
+[8.457768] (-) TimerEvent: {}
+[8.558660] (-) TimerEvent: {}
+[8.659630] (-) TimerEvent: {}
+[8.760574] (-) TimerEvent: {}
+[8.861521] (-) TimerEvent: {}
+[8.962520] (-) TimerEvent: {}
+[9.021618] (teleop_tools) CommandEnded: {'returncode': 0}
+[9.063076] (-) TimerEvent: {}
+[9.082392] (f1tenth_stack) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/f1tenth_stack', 'build', '--build-base', '/f1tenth_ws/build/f1tenth_stack/build', 'install', '--prefix', '/f1tenth_ws/install/f1tenth_stack', '--record', '/f1tenth_ws/build/f1tenth_stack/install.log', '--single-version-externally-managed'], 'cwd': '/f1tenth_ws/src/f1tenth_system/f1tenth_stack', 'env': {'TMUX': '/tmp//tmux-0/default,34,2', 'HOSTNAME': 'ccribatch3car1-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/f1tenth_ws/install/vesc_driver/lib:/f1tenth_ws/install/vesc_ackermann/lib:/f1tenth_ws/install/vesc_msgs/lib:/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib', 'HOME': '/root', 'OLDPWD': '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'ROS_DISTRO': 'foxy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'screen', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/foxy', 'AMENT_PREFIX_PATH': '/f1tenth_ws/install/vesc:/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/vesc_msgs:/f1tenth_ws/install/teleop_tools_msgs:/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy', 'SHELL': '/bin/bash', 'PWD': '/f1tenth_ws/build/f1tenth_stack', 'PYTHONPATH': '/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'TMUX_PANE': '%3', 'CMAKE_PREFIX_PATH': '/f1tenth_ws/install/vesc:/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/f1tenth_ws/install/teleop_tools_msgs:/f1tenth_ws/install/ackermann_mux'}, 'shell': False}
+[9.117399] (teleop_tools) JobProgress: {'identifier': 'teleop_tools', 'progress': 'install'}
+[9.118348] (teleop_tools) Command: {'cmd': ['/usr/bin/cmake', '--install', '/f1tenth_ws/build/teleop_tools'], 'cwd': '/f1tenth_ws/build/teleop_tools', 'env': OrderedDict([('TMUX', '/tmp//tmux-0/default,34,2'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/f1tenth_system/f1tenth_stack/config'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/teleop_tools_msgs:/f1tenth_ws/install/key_teleop:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/teleop_tools'), ('PYTHONPATH', '/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/teleop_tools_msgs:/opt/ros/foxy')]), 'shell': False}
+[9.163181] (-) TimerEvent: {}
+[9.165136] (teleop_tools) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.166833] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/ament_index/resource_index/package_run_dependencies/teleop_tools\n'}
+[9.169119] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/ament_index/resource_index/parent_prefix_path/teleop_tools\n'}
+[9.170260] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/teleop_tools/environment/ament_prefix_path.sh\n'}
+[9.172988] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/teleop_tools/environment/ament_prefix_path.dsv\n'}
+[9.174306] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/teleop_tools/environment/path.sh\n'}
+[9.175380] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/teleop_tools/environment/path.dsv\n'}
+[9.176355] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/teleop_tools/local_setup.bash\n'}
+[9.176981] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/teleop_tools/local_setup.sh\n'}
+[9.177837] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/teleop_tools/local_setup.zsh\n'}
+[9.178250] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/teleop_tools/local_setup.dsv\n'}
+[9.178589] (teleop_tools) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/teleop_tools/share/teleop_tools/package.dsv\n'}
+[9.178906] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/ament_index/resource_index/packages/teleop_tools\n'}
+[9.179248] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/teleop_tools/cmake/teleop_toolsConfig.cmake\n'}
+[9.179709] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/teleop_tools/cmake/teleop_toolsConfig-version.cmake\n'}
+[9.180329] (teleop_tools) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/teleop_tools/share/teleop_tools/package.xml\n'}
+[9.188372] (teleop_tools) CommandEnded: {'returncode': 0}
+[9.263758] (-) TimerEvent: {}
+[9.345690] (teleop_tools) JobEnded: {'identifier': 'teleop_tools', 'rc': 0}
+[9.363751] (-) TimerEvent: {}
+[9.464444] (-) TimerEvent: {}
+[9.565249] (-) TimerEvent: {}
+[9.666073] (-) TimerEvent: {}
+[9.767010] (-) TimerEvent: {}
+[9.867890] (-) TimerEvent: {}
+[9.968780] (-) TimerEvent: {}
+[9.971009] (f1tenth_stack) StdoutLine: {'line': b'running egg_info\n'}
+[9.974051] (f1tenth_stack) StdoutLine: {'line': b'writing ../../../build/f1tenth_stack/f1tenth_stack.egg-info/PKG-INFO\n'}
+[9.975162] (f1tenth_stack) StdoutLine: {'line': b'writing dependency_links to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/dependency_links.txt\n'}
+[9.976527] (f1tenth_stack) StdoutLine: {'line': b'writing entry points to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/entry_points.txt\n'}
+[9.977133] (f1tenth_stack) StdoutLine: {'line': b'writing requirements to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/requires.txt\n'}
+[9.978140] (f1tenth_stack) StdoutLine: {'line': b'writing top-level names to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/top_level.txt\n'}
+[10.068999] (-) TimerEvent: {}
+[10.147161] (f1tenth_stack) StdoutLine: {'line': b"reading manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'\n"}
+[10.151171] (f1tenth_stack) StdoutLine: {'line': b"writing manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'\n"}
+[10.151970] (f1tenth_stack) StdoutLine: {'line': b'running build\n'}
+[10.152345] (f1tenth_stack) StdoutLine: {'line': b'running build_py\n'}
+[10.152819] (f1tenth_stack) StdoutLine: {'line': b'running install\n'}
+[10.156072] (f1tenth_stack) StdoutLine: {'line': b'running install_lib\n'}
+[10.161654] (f1tenth_stack) StdoutLine: {'line': b'running install_data\n'}
+[10.163680] (f1tenth_stack) StdoutLine: {'line': b'copying config/vesc.yaml -> /f1tenth_ws/install/f1tenth_stack/share/f1tenth_stack/config\n'}
+[10.164434] (f1tenth_stack) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.169272] (-) TimerEvent: {}
+[10.172656] (f1tenth_stack) StdoutLine: {'line': b"removing '/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages/f1tenth_stack-0.0.1-py3.8.egg-info' (and everything under it)\n"}
+[10.174304] (f1tenth_stack) StdoutLine: {'line': b'Copying ../../../build/f1tenth_stack/f1tenth_stack.egg-info to /f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages/f1tenth_stack-0.0.1-py3.8.egg-info\n'}
+[10.178402] (f1tenth_stack) StdoutLine: {'line': b'running install_scripts\n'}
+[10.252406] (f1tenth_stack) StdoutLine: {'line': b'Installing throttle_interpolator script to /f1tenth_ws/install/f1tenth_stack/lib/f1tenth_stack\n'}
+[10.253733] (f1tenth_stack) StdoutLine: {'line': b"writing list of installed files to '/f1tenth_ws/build/f1tenth_stack/install.log'\n"}
+[10.269385] (-) TimerEvent: {}
+[10.341748] (f1tenth_stack) CommandEnded: {'returncode': 0}
+[10.369667] (-) TimerEvent: {}
+[10.375651] (f1tenth_stack) JobEnded: {'identifier': 'f1tenth_stack', 'rc': 0}
+[10.378468] (-) EventReactorShutdown: {}

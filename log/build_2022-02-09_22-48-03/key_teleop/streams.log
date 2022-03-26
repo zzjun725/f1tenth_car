@@ -1,0 +1,21 @@
+[2.439s] Invoking command in '/f1tenth_ws/src/f1tenth_system/teleop_tools/key_teleop': PYTHONPATH=/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/key_teleop build --build-base /f1tenth_ws/build/key_teleop/build install --prefix /f1tenth_ws/install/key_teleop --record /f1tenth_ws/build/key_teleop/install.log --single-version-externally-managed
+[3.486s] running egg_info
+[3.488s] writing ../../../../build/key_teleop/key_teleop.egg-info/PKG-INFO
+[3.489s] writing dependency_links to ../../../../build/key_teleop/key_teleop.egg-info/dependency_links.txt
+[3.491s] writing entry points to ../../../../build/key_teleop/key_teleop.egg-info/entry_points.txt
+[3.493s] writing requirements to ../../../../build/key_teleop/key_teleop.egg-info/requires.txt
+[3.493s] writing top-level names to ../../../../build/key_teleop/key_teleop.egg-info/top_level.txt
+[3.707s] reading manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'
+[3.711s] writing manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'
+[3.712s] running build
+[3.712s] running build_py
+[3.716s] running install
+[3.721s] running install_lib
+[3.730s] running install_data
+[3.734s] running install_egg_info
+[3.743s] removing '/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop-0.3.0-py3.8.egg-info' (and everything under it)
+[3.744s] Copying ../../../../build/key_teleop/key_teleop.egg-info to /f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop-0.3.0-py3.8.egg-info
+[3.749s] running install_scripts
+[3.836s] Installing key_teleop script to /f1tenth_ws/install/key_teleop/lib/key_teleop
+[3.839s] writing list of installed files to '/f1tenth_ws/build/key_teleop/install.log'
+[4.430s] Invoked command in '/f1tenth_ws/src/f1tenth_system/teleop_tools/key_teleop' returned '0': PYTHONPATH=/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/key_teleop build --build-base /f1tenth_ws/build/key_teleop/build install --prefix /f1tenth_ws/install/key_teleop --record /f1tenth_ws/build/key_teleop/install.log --single-version-externally-managed

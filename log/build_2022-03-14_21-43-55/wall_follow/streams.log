@@ -1,0 +1,28 @@
+[1.281s] Invoking command in '/f1tenth_ws/build/wall_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/wall_follow -- -j6 -l6
+[1.693s] [100%] Built target wall_follow_node
+[1.758s] Invoked command in '/f1tenth_ws/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/wall_follow -- -j6 -l6
+[1.948s] Invoking command in '/f1tenth_ws/build/wall_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/wall_follow
+[1.994s] -- Install configuration: ""
+[1.994s] -- Up-to-date: /f1tenth_ws/install/wall_follow/lib/wall_follow/wall_follow_node
+[1.995s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/pythonpath.sh
+[1.995s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/pythonpath.dsv
+[1.996s] -- Up-to-date: /f1tenth_ws/install/wall_follow/lib/python3.8/site-packages/wall_follow
+[1.996s] -- Up-to-date: /f1tenth_ws/install/wall_follow/lib/python3.8/site-packages/wall_follow/__init__.py
+[2.169s] Listing '/f1tenth_ws/install/wall_follow/lib/python3.8/site-packages/wall_follow'...
+[2.221s] -- Up-to-date: /f1tenth_ws/install/wall_follow/lib/wall_follow/wall_follow_node.py
+[2.222s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/ament_index/resource_index/package_run_dependencies/wall_follow
+[2.222s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/ament_index/resource_index/parent_prefix_path/wall_follow
+[2.237s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/ament_prefix_path.sh
+[2.238s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/ament_prefix_path.dsv
+[2.238s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/path.sh
+[2.239s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/environment/path.dsv
+[2.239s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.bash
+[2.240s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.sh
+[2.240s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.zsh
+[2.241s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.dsv
+[2.241s] -- Installing: /f1tenth_ws/install/wall_follow/share/wall_follow/package.dsv
+[2.242s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/ament_index/resource_index/packages/wall_follow
+[2.242s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/cmake/wall_followConfig.cmake
+[2.244s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/cmake/wall_followConfig-version.cmake
+[2.244s] -- Up-to-date: /f1tenth_ws/install/wall_follow/share/wall_follow/package.xml
+[2.270s] Invoked command in '/f1tenth_ws/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/wall_follow

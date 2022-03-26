@@ -1,0 +1,6 @@
+Invoking command in '/f1tenth_ws/build/gap_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /f1tenth_ws/src/gap_follow -DCMAKE_INSTALL_PREFIX=/f1tenth_ws/install/gap_follow
+Invoked command in '/f1tenth_ws/build/gap_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /f1tenth_ws/src/gap_follow -DCMAKE_INSTALL_PREFIX=/f1tenth_ws/install/gap_follow
+Invoking command in '/f1tenth_ws/build/gap_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/gap_follow -- -j6 -l6
+Invoked command in '/f1tenth_ws/build/gap_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/gap_follow -- -j6 -l6
+Invoking command in '/f1tenth_ws/build/gap_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/gap_follow
+Invoked command in '/f1tenth_ws/build/gap_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/gap_follow

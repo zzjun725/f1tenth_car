@@ -1,0 +1,29 @@
+[0.101s] Invoking command in '/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[0.785s] [100%] Built target pure_pursuit_node
+[0.845s] Invoked command in '/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[1.334s] Invoking command in '/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/pure_pursuit
+[1.452s] -- Install configuration: ""
+[1.453s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node
+[1.453s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.sh
+[1.453s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.dsv
+[1.454s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit
+[1.455s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit/__init__.py
+[1.744s] Listing '/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit'...
+[1.793s] -- Installing: /f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node.py
+[1.795s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/waypoint_logger.py
+[1.796s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit
+[1.796s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit
+[1.797s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh
+[1.798s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv
+[1.798s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.sh
+[1.798s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.dsv
+[1.799s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.bash
+[1.799s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.sh
+[1.800s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.zsh
+[1.801s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.dsv
+[1.802s] -- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.dsv
+[1.805s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit
+[1.818s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake
+[1.818s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake
+[1.819s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.xml
+[1.826s] Invoked command in '/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/pure_pursuit

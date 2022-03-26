@@ -1,0 +1,60 @@
+[0.081s] Invoking command in '/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[0.225s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.356s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.190s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.400s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.421s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.068s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.329s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.338s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.007s] -- Found rclpy: 1.0.7 (/opt/ros/foxy/share/rclpy/cmake)
+[3.008s] -- Found geometry_msgs: 2.0.4 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[3.147s] -- Found nav_msgs: 2.0.4 (/opt/ros/foxy/share/nav_msgs/cmake)
+[3.435s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[3.577s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[3.854s] -- Found visualization_msgs: 2.0.4 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[4.134s] -- Found tf2_ros: 0.13.12 (/opt/ros/foxy/share/tf2_ros/cmake)
+[5.440s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[5.780s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.788s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.789s] -- Configured cppcheck include dirs: /f1tenth_ws/src/pure_pursuit/include
+[5.792s] -- Configured cppcheck exclude dirs and/or files: 
+[5.797s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.797s] -- Configured cpplint exclude dirs and/or files: 
+[5.798s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.802s] -- Added test 'lint_cmake' to check CMake code style
+[5.803s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[5.809s] -- Added test 'uncrustify' to check C / C++ code style
+[5.810s] -- Configured uncrustify additional arguments: 
+[5.811s] -- Added test 'xmllint' to check XML markup files
+[5.822s] -- Configuring done
+[5.909s] -- Generating done
+[5.917s] -- Build files have been written to: /f1tenth_ws/build/pure_pursuit
+[6.143s] [100%] Built target pure_pursuit_node
+[6.189s] Invoked command in '/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[6.350s] Invoking command in '/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/pure_pursuit
+[6.381s] -- Install configuration: ""
+[6.382s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node
+[6.384s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.sh
+[6.385s] -- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.dsv
+[6.385s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit
+[6.385s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit/__init__.py
+[6.546s] Listing '/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit'...
+[6.562s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node.py
+[6.564s] -- Installing: /f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/waypoint_logger.py
+[6.566s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit
+[6.568s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit
+[6.569s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh
+[6.570s] -- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv
+[6.570s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.sh
+[6.571s] -- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.dsv
+[6.571s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.bash
+[6.572s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.sh
+[6.572s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.zsh
+[6.574s] -- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.dsv
+[6.574s] -- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.dsv
+[6.575s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit
+[6.575s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake
+[6.576s] -- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake
+[6.576s] -- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.xml
+[6.587s] Invoked command in '/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/pure_pursuit

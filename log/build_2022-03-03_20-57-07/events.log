@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.002694] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.003312] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.004428] (-) JobUnselected: {'identifier': 'gap_follow'}
+[0.004707] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.004822] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.005029] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.005166] (-) JobUnselected: {'identifier': 'particle_filter'}
+[0.005257] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.005346] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.005434] (-) JobUnselected: {'identifier': 'vesc'}
+[0.005522] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.005608] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.005694] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.005779] (-) JobUnselected: {'identifier': 'wall_follow'}
+[0.005899] (pure_pursuit) JobQueued: {'identifier': 'pure_pursuit', 'dependencies': OrderedDict()}
+[0.006137] (pure_pursuit) JobStarted: {'identifier': 'pure_pursuit'}
+[0.073794] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'cmake'}
+[0.078055] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'build'}
+[0.082604] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/f1tenth_ws/build/pure_pursuit', '--', '-j6', '-l6'], 'cwd': '/f1tenth_ws/build/pure_pursuit', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,34,0'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/f1tenth_ws/install/vesc_driver/lib:/f1tenth_ws/install/vesc_ackermann/lib:/f1tenth_ws/install/vesc_msgs/lib:/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/pure_pursuit'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/f1tenth_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/wall_follow:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/vesc:/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/f1tenth_ws/install/teleop_tools:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/teleop_tools_msgs:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/f1tenth_ws/install/gap_follow:/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/pure_pursuit'), ('PYTHONPATH', '/f1tenth_ws/install/wall_follow/lib/python3.8/site-packages:/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/f1tenth_ws/install/gap_follow/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/wall_follow:/f1tenth_ws/install/vesc:/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/f1tenth_ws/install/teleop_tools:/f1tenth_ws/install/teleop_tools_msgs:/f1tenth_ws/install/gap_follow:/f1tenth_ws/install/ackermann_mux:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy')]), 'shell': False}
+[0.098937] (-) TimerEvent: {}
+[0.200928] (-) TimerEvent: {}
+[0.230015] (pure_pursuit) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.301150] (-) TimerEvent: {}
+[0.361799] (pure_pursuit) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.401353] (-) TimerEvent: {}
+[0.502676] (-) TimerEvent: {}
+[0.605635] (-) TimerEvent: {}
+[0.706541] (-) TimerEvent: {}
+[0.808322] (-) TimerEvent: {}
+[0.911756] (-) TimerEvent: {}
+[1.015365] (-) TimerEvent: {}
+[1.116294] (-) TimerEvent: {}
+[1.194750] (pure_pursuit) StdoutLine: {'line': b'-- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.216594] (-) TimerEvent: {}
+[1.319638] (-) TimerEvent: {}
+[1.404136] (pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.419791] (-) TimerEvent: {}
+[1.426334] (pure_pursuit) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.520079] (-) TimerEvent: {}
+[1.624392] (-) TimerEvent: {}
+[1.732384] (-) TimerEvent: {}
+[1.833589] (-) TimerEvent: {}
+[1.937052] (-) TimerEvent: {}
+[2.041940] (-) TimerEvent: {}
+[2.073424] (pure_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.142101] (-) TimerEvent: {}
+[2.244790] (-) TimerEvent: {}
+[2.334377] (pure_pursuit) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.343611] (pure_pursuit) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.344852] (-) TimerEvent: {}
+[2.450069] (-) TimerEvent: {}
+[2.552504] (-) TimerEvent: {}
+[2.653644] (-) TimerEvent: {}
+[2.757903] (-) TimerEvent: {}
+[2.863019] (-) TimerEvent: {}
+[2.965069] (-) TimerEvent: {}
+[3.011573] (pure_pursuit) StdoutLine: {'line': b'-- Found rclpy: 1.0.7 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[3.013524] (pure_pursuit) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.4 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[3.065213] (-) TimerEvent: {}
+[3.152572] (pure_pursuit) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.4 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[3.165663] (-) TimerEvent: {}
+[3.277892] (-) TimerEvent: {}
+[3.381755] (-) TimerEvent: {}
+[3.440271] (pure_pursuit) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)\n'}
+[3.481950] (-) TimerEvent: {}
+[3.581816] (pure_pursuit) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[3.583444] (-) TimerEvent: {}
+[3.685534] (-) TimerEvent: {}
+[3.786754] (-) TimerEvent: {}
+[3.859378] (pure_pursuit) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.4 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[3.886892] (-) TimerEvent: {}
+[3.990542] (-) TimerEvent: {}
+[4.092121] (-) TimerEvent: {}
+[4.139693] (pure_pursuit) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.12 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[4.193324] (-) TimerEvent: {}
+[4.295195] (-) TimerEvent: {}
+[4.397132] (-) TimerEvent: {}
+[4.501554] (-) TimerEvent: {}
+[4.604245] (-) TimerEvent: {}
+[4.705742] (-) TimerEvent: {}
+[4.806936] (-) TimerEvent: {}
+[4.909120] (-) TimerEvent: {}
+[5.016472] (-) TimerEvent: {}
+[5.117810] (-) TimerEvent: {}
+[5.222897] (-) TimerEvent: {}
+[5.326238] (-) TimerEvent: {}
+[5.433239] (-) TimerEvent: {}
+[5.443834] (pure_pursuit) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[5.533366] (-) TimerEvent: {}
+[5.634318] (-) TimerEvent: {}
+[5.735454] (-) TimerEvent: {}
+[5.785480] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.793517] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.794652] (pure_pursuit) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /f1tenth_ws/src/pure_pursuit/include\n'}
+[5.795753] (pure_pursuit) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.802173] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.803065] (pure_pursuit) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.804237] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.807422] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.809090] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[5.814920] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.815809] (pure_pursuit) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.816833] (pure_pursuit) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.828102] (pure_pursuit) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.835681] (-) TimerEvent: {}
+[5.913823] (pure_pursuit) StdoutLine: {'line': b'-- Generating done\n'}
+[5.922513] (pure_pursuit) StdoutLine: {'line': b'-- Build files have been written to: /f1tenth_ws/build/pure_pursuit\n'}
+[5.936398] (-) TimerEvent: {}
+[6.037691] (-) TimerEvent: {}
+[6.141498] (-) TimerEvent: {}
+[6.147624] (pure_pursuit) StdoutLine: {'line': b'[100%] Built target pure_pursuit_node\n'}
+[6.193997] (pure_pursuit) CommandEnded: {'returncode': 0}
+[6.241948] (-) TimerEvent: {}
+[6.304104] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'install'}
+[6.344505] (-) TimerEvent: {}
+[6.353527] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--install', '/f1tenth_ws/build/pure_pursuit'], 'cwd': '/f1tenth_ws/build/pure_pursuit', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,34,0'), ('HOSTNAME', 'ccribatch3car1-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/f1tenth_ws/install/vesc_driver/lib:/f1tenth_ws/install/vesc_ackermann/lib:/f1tenth_ws/install/vesc_msgs/lib:/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('HOME', '/root'), ('OLDPWD', '/f1tenth_ws/src/pure_pursuit'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/f1tenth_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/wall_follow:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/vesc:/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/f1tenth_ws/install/teleop_tools:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/teleop_tools_msgs:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/f1tenth_ws/install/gap_follow:/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/f1tenth_ws/build/pure_pursuit'), ('PYTHONPATH', '/f1tenth_ws/install/wall_follow/lib/python3.8/site-packages:/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/f1tenth_ws/install/gap_follow/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/wall_follow:/f1tenth_ws/install/vesc:/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/f1tenth_ws/install/teleop_tools:/f1tenth_ws/install/teleop_tools_msgs:/f1tenth_ws/install/gap_follow:/f1tenth_ws/install/ackermann_mux:/f1tenth_ws/install/f1tenth_stack:/f1tenth_ws/install/joy_teleop:/f1tenth_ws/install/particle_filter:/f1tenth_ws/install/mouse_teleop:/f1tenth_ws/install/key_teleop:/opt/ros/foxy')]), 'shell': False}
+[6.386994] (pure_pursuit) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.388187] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node\n'}
+[6.389198] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.sh\n'}
+[6.390178] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.dsv\n'}
+[6.390857] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit\n'}
+[6.391228] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit/__init__.py\n'}
+[6.446474] (-) TimerEvent: {}
+[6.547546] (-) TimerEvent: {}
+[6.550984] (pure_pursuit) StdoutLine: {'line': b"Listing '/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit'...\n"}
+[6.568158] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node.py\n'}
+[6.569294] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/waypoint_logger.py\n'}
+[6.571881] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit\n'}
+[6.572711] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit\n'}
+[6.574290] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh\n'}
+[6.575250] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv\n'}
+[6.576127] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.sh\n'}
+[6.576547] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.dsv\n'}
+[6.576914] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.bash\n'}
+[6.577474] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.sh\n'}
+[6.577942] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.zsh\n'}
+[6.579705] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.dsv\n'}
+[6.580413] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.dsv\n'}
+[6.580785] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit\n'}
+[6.581322] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake\n'}
+[6.581732] (pure_pursuit) StdoutLine: {'line': b'-- Up-to-date: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake\n'}
+[6.582160] (pure_pursuit) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.xml\n'}
+[6.588145] (pure_pursuit) CommandEnded: {'returncode': 0}
+[6.649349] (-) TimerEvent: {}
+[6.758148] (-) TimerEvent: {}
+[6.841484] (pure_pursuit) JobEnded: {'identifier': 'pure_pursuit', 'rc': 0}
+[6.845497] (-) EventReactorShutdown: {}

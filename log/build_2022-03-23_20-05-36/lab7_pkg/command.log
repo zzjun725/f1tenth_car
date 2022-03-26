@@ -1,0 +1,4 @@
+Invoking command in '/f1tenth_ws/build/lab7_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/lab7_pkg -- -j6 -l6
+Invoked command in '/f1tenth_ws/build/lab7_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /f1tenth_ws/build/lab7_pkg -- -j6 -l6
+Invoking command in '/f1tenth_ws/build/lab7_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/lab7_pkg
+Invoked command in '/f1tenth_ws/build/lab7_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /f1tenth_ws/build/lab7_pkg

@@ -1,0 +1,42 @@
+[0.176s] Invoking command in '/f1tenth_ws/build/vesc': AMENT_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/f1tenth_ws/install/vesc_driver/lib:/f1tenth_ws/install/vesc_ackermann/lib:/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /f1tenth_ws/src/f1tenth_system/vesc/vesc -DCMAKE_INSTALL_PREFIX=/f1tenth_ws/install/vesc
+[1.016s] -- The C compiler identification is GNU 8.4.0
+[1.688s] -- The CXX compiler identification is GNU 8.4.0
+[1.713s] -- Check for working C compiler: /usr/bin/cc
+[2.685s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.688s] -- Detecting C compiler ABI info
+[3.598s] -- Detecting C compiler ABI info - done
+[3.670s] -- Detecting C compile features
+[3.672s] -- Detecting C compile features - done
+[3.684s] -- Check for working CXX compiler: /usr/bin/c++
+[4.604s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.610s] -- Detecting CXX compiler ABI info
+[5.588s] -- Detecting CXX compiler ABI info - done
+[5.664s] -- Detecting CXX compile features
+[5.667s] -- Detecting CXX compile features - done
+[5.679s] -- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[5.941s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[5.942s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.434s] -- Configuring done
+[7.446s] -- Generating done
+[7.451s] -- Build files have been written to: /f1tenth_ws/build/vesc
+[7.466s] Invoked command in '/f1tenth_ws/build/vesc' returned '0': AMENT_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/f1tenth_ws/install/vesc_driver/lib:/f1tenth_ws/install/vesc_ackermann/lib:/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /f1tenth_ws/src/f1tenth_system/vesc/vesc -DCMAKE_INSTALL_PREFIX=/f1tenth_ws/install/vesc
+[7.470s] Invoking command in '/f1tenth_ws/build/vesc': AMENT_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/f1tenth_ws/install/vesc_driver/lib:/f1tenth_ws/install/vesc_ackermann/lib:/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /f1tenth_ws/build/vesc -- -j24 -l24
+[7.870s] Invoked command in '/f1tenth_ws/build/vesc' returned '0': AMENT_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/f1tenth_ws/install/vesc_driver/lib:/f1tenth_ws/install/vesc_ackermann/lib:/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /f1tenth_ws/build/vesc -- -j24 -l24
+[8.301s] Invoking command in '/f1tenth_ws/build/vesc': AMENT_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/f1tenth_ws/install/vesc_driver/lib:/f1tenth_ws/install/vesc_ackermann/lib:/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /f1tenth_ws/build/vesc
+[8.386s] -- Install configuration: ""
+[8.389s] -- Installing: /f1tenth_ws/install/vesc/share/ament_index/resource_index/package_run_dependencies/vesc
+[8.392s] -- Installing: /f1tenth_ws/install/vesc/share/ament_index/resource_index/parent_prefix_path/vesc
+[8.394s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/environment/ament_prefix_path.sh
+[8.395s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/environment/ament_prefix_path.dsv
+[8.396s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/environment/path.sh
+[8.397s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/environment/path.dsv
+[8.398s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/local_setup.bash
+[8.398s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/local_setup.sh
+[8.399s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/local_setup.zsh
+[8.399s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/local_setup.dsv
+[8.400s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/package.dsv
+[8.400s] -- Installing: /f1tenth_ws/install/vesc/share/ament_index/resource_index/packages/vesc
+[8.401s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/cmake/vescConfig.cmake
+[8.401s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/cmake/vescConfig-version.cmake
+[8.402s] -- Installing: /f1tenth_ws/install/vesc/share/vesc/package.xml
+[8.413s] Invoked command in '/f1tenth_ws/build/vesc' returned '0': AMENT_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/f1tenth_ws/install/vesc_driver:/f1tenth_ws/install/vesc_ackermann:/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/f1tenth_ws/install/vesc_driver/lib:/f1tenth_ws/install/vesc_ackermann/lib:/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /f1tenth_ws/build/vesc

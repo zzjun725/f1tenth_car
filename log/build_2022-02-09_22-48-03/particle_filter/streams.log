@@ -1,0 +1,21 @@
+[1.453s] Invoking command in '/f1tenth_ws/src/particle_filter': PYTHONPATH=/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/particle_filter build --build-base /f1tenth_ws/build/particle_filter/build install --prefix /f1tenth_ws/install/particle_filter --record /f1tenth_ws/build/particle_filter/install.log --single-version-externally-managed
+[2.332s] running egg_info
+[2.335s] writing ../../build/particle_filter/particle_filter.egg-info/PKG-INFO
+[2.337s] writing dependency_links to ../../build/particle_filter/particle_filter.egg-info/dependency_links.txt
+[2.339s] writing entry points to ../../build/particle_filter/particle_filter.egg-info/entry_points.txt
+[2.340s] writing requirements to ../../build/particle_filter/particle_filter.egg-info/requires.txt
+[2.345s] writing top-level names to ../../build/particle_filter/particle_filter.egg-info/top_level.txt
+[2.519s] reading manifest file '../../build/particle_filter/particle_filter.egg-info/SOURCES.txt'
+[2.527s] writing manifest file '../../build/particle_filter/particle_filter.egg-info/SOURCES.txt'
+[2.529s] running build
+[2.533s] running build_py
+[2.545s] running install
+[2.548s] running install_lib
+[2.548s] running install_data
+[2.550s] running install_egg_info
+[2.552s] removing '/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages/particle_filter-0.2.0-py3.8.egg-info' (and everything under it)
+[2.554s] Copying ../../build/particle_filter/particle_filter.egg-info to /f1tenth_ws/install/particle_filter/lib/python3.8/site-packages/particle_filter-0.2.0-py3.8.egg-info
+[2.559s] running install_scripts
+[2.646s] Installing particle_filter script to /f1tenth_ws/install/particle_filter/lib/particle_filter
+[2.646s] writing list of installed files to '/f1tenth_ws/build/particle_filter/install.log'
+[2.786s] Invoked command in '/f1tenth_ws/src/particle_filter' returned '0': PYTHONPATH=/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/particle_filter build --build-base /f1tenth_ws/build/particle_filter/build install --prefix /f1tenth_ws/install/particle_filter --record /f1tenth_ws/build/particle_filter/install.log --single-version-externally-managed
