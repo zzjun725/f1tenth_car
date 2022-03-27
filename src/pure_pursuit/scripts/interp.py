@@ -166,14 +166,15 @@ def floorUp(x):
         return np.floor(x).astype(np.int32)
 
 # interp speed
-sOffset = 0.8
-speed_max = 4.8
+sOffset = 1.2
+speed_max = 5.3
 speed_min = 2.0
 shortBufferOffset = 4
-longBufferOffset = 5
+longBufferOffset = 6
 short_buffer = floorUp(2*arcPointsNum/3 + shortBufferOffset)
 long_buffer = floorUp(arcPointsNum/3 + longBufferOffset)
 print(f'short_buffer: {short_buffer}, long_buffer{long_buffer}')
+print(f'speed_max: {speed_max}')
 
 v = np.array([-1])
 v = np.hstack((v, np.array([speed_max-sOffset]*int(ShortPointsNum/2-shortBufferOffset))))

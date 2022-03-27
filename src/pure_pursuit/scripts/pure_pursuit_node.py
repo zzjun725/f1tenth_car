@@ -49,8 +49,8 @@ class PurePursuit(Node):
         self.findFirstP = False
         self.nearst_idx = 0
         self.wp = None
-        self.L = 1.2
-        self.P = 0.2
+        self.L = 1.5
+        self.P = 0.15
         self.odom_subscriber = self.create_subscription(
             Odometry, 'pf/pose/odom', self.pose_callback, 10)
         drive_topic = '/drive'
@@ -155,12 +155,12 @@ class PurePursuit(Node):
         #######          
         
         local_goalP = np.linalg.inv(local2global) @ np.array([interp_point[0], interp_point[1], 0, 1])
-        # print(local_goalP)
+        # print(local_goalP) 
         gamma = 2*abs(local_goalP[1]) / (cur_L ** 2)
         velocity = wp[segment_end][2]
         P = self.P
-        if velocity < 4.4:
-            P = 0.4
+        if velocity < 5.2:
+            P = 0.5
         # TODO: calculate curvature/steering angle
         if local_goalP[1] > 0:
             steering_angle = P * gamma
