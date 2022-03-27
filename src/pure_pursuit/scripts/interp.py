@@ -166,9 +166,9 @@ def floorUp(x):
         return np.floor(x).astype(np.int32)
 
 # interp speed
-sOffset = 1.0
-speed_max = 4.4
-speed_min = 1.5
+sOffset = 0.8
+speed_max = 4.8
+speed_min = 2.0
 shortBufferOffset = 4
 longBufferOffset = 5
 short_buffer = floorUp(2*arcPointsNum/3 + shortBufferOffset)
