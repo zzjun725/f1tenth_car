@@ -96,9 +96,9 @@ arcOffsetShortH = 0.5
 arcOffsetShortV = 0.1
 arcOffsetCurve = 0.5
 cubic_k = 7
-arcPointsNum = 15
-LongPointsNum = 40
-ShortPointsNum = 20
+arcPointsNum = 10
+LongPointsNum = 60
+ShortPointsNum = 30
 
 # 
 left_certerP = [h/2 - arcOffsetLongH , l3/2]
@@ -166,11 +166,11 @@ def floorUp(x):
         return np.floor(x).astype(np.int32)
 
 # interp speed
-sOffset = 1.2
-speed_max = 5.3
-speed_min = 2.0
-shortBufferOffset = 4
-longBufferOffset = 6
+sOffset = 2.0
+speed_max = 5.0
+speed_min = 1.5
+shortBufferOffset = 8
+longBufferOffset = 20
 short_buffer = floorUp(2*arcPointsNum/3 + shortBufferOffset)
 long_buffer = floorUp(arcPointsNum/3 + longBufferOffset)
 print(f'short_buffer: {short_buffer}, long_buffer{long_buffer}')
